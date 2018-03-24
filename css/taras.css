@@ -1,3 +1,7 @@
+a, button, .mane-menu {
+    transition: linear 0.1s
+}
+
 .language > a:focus {
 	outline: 0;
 }
@@ -80,3 +84,47 @@ button:focus {
 	box-shadow: none;
 }
 
+.mane-menu {
+	cursor: pointer;
+	background-image: url('../image/menu.png');
+	width: 45px;
+	height: 26px;
+}
+
+.mane-menu.show {
+	background-image: url('../image/menu-hover.png');
+}
+
+.menu-togle {
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 970px) {
+	.mane-menu .dropdown-menu {
+		top: -35px !important;
+	    border: 0;
+	    left: 45px !important;
+	    box-shadow: none;
+	}
+	.mane-menu .dropdown-item {
+		display: inline;
+		font-family: AvenirNextCyr;
+		color:  #000000;
+		font-size: 16px;/* Approximation due to font substitution */
+		border-radius: 5px;
+		font-weight: 400;
+	}
+
+	.mane-menu .dropdown-item:hover {
+		background-color: #ccc;
+	}
+
+	.mane-menu .dropdown-item:focus {
+		background-color: #bbb;
+	}
+}
+
+.header-left {
+	display: flex;
+}
