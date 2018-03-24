@@ -601,6 +601,194 @@ footer {
     padding-bottom: 20px;
 }
 
+a, button, .mane-menu {
+    transition: linear 0.1s
+}
+
+.language > a:focus {
+    outline: 0;
+}
+.language-menu > .dropdown-item {
+    display: none;
+}
+
+.language-menu > .dropdown-item.active {
+    display: inline-block;
+    color: black;
+}
+
+.language {
+    margin-right: 10px;
+}
+
+.languages .active {
+    display: none;
+}
+
+.language-menu > .dropdown-item {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.language-menu {
+    display: inline-block;
+}
+
+.language .dropdown-toggle::after {
+    border-style: solid;
+    border-width: 4px 3px 0 3px;
+    margin-left: -9px;
+    border-color: #000305 transparent transparent transparent;
+}
+
+.languages-list .dropdown-item:focus, .languages-list .dropdown-item:hover {
+    background-color: #d4df35;
+}
+
+.languages .dropdown-item {
+    padding: .25rem .5rem;
+}
+
+.languages.dropdown-menu {
+    min-width: 97px;
+    border: none;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 0;
+}
+
+.dropdown.language .dropdown-toggle, .language .btn-secondary:not([disabled]):not(.disabled).active, .language .btn-secondary:not([disabled]):not(.disabled):active, .language .show>.btn-secondary.dropdown-toggle{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.language .dropdown-toggle {
+    padding: 0;
+}
+
+.language-list .dropdown-item.active, .language-list .dropdown-item:active, .language-list .dropdown-item:focus, .language-list .dropdown-item:hover {
+    background-color: #d4df35;
+    color: black;
+}
+
+.language-list .dropdown-item:active {
+    background-color: #a4af15;
+}
+
+.languages img {
+    padding: 0px 7px;
+}
+button:focus {
+    outline: 0;
+}
+
+.language .btn-secondary:not([disabled]):not(.disabled).active:focus, .language .btn-secondary:not([disabled]):not(.disabled):active:focus, .language .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.mane-menu {
+    cursor: pointer;
+    background-image: url('../image/menu.png');
+    width: 45px;
+    height: 26px;
+    margin-left: 56px;
+    margin-top: 9px;
+}
+
+.mane-menu.show {
+    background-image: url('../image/menu-hover.png');
+}
+
+.menu-togle {
+    width: 100%;
+    height: 100%;
+}
+
+.mane-menu .dropdown-item:focus, .mane-menu .dropdown-item:hover {
+    background-color: #d4df35;
+}
+
+.mane-menu .dropdown-item:active {
+    background-color: #a4af15;
+}
+
+.mane-menu  .dropdown-menu{
+    min-width: 97px;
+    border: none;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 0;
+}
+
+.mane-menu .dropdown-menu {
+    top: 10px !important;
+}
+
+.mane-mobile {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (min-width: 1390px) {
+    .mane-menu .dropdown-menu {
+        top: -35px !important;
+        border: 0;
+        left: 45px !important;
+        box-shadow: none;
+    }
+    .mane-menu .dropdown-item {
+        display: inline;
+        font-family: Avenir Next Cyr Regular;
+        color:  #000000;
+        font-size: 18px;/* Approximation due to font substitution */
+        border-radius: 5px;
+        font-weight: 400;
+    }
+
+    .mane-menu .dropdown-item:hover {
+        background-color: #ccc;
+    }
+
+    .mane-menu .dropdown-item:focus {
+        background-color: #bbb;
+    }
+
+    .header-social-network {
+        margin-left: 41px;
+    }
+
+    .header-tel {
+        padding: 5px 24px 0;
+    }
+
+    .mane-menu {
+        margin-left: 40px;
+    }
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-contact.collapse.show {
+    display: flex;
+}
+
+@media (max-width: 1600px) {
+    .btn-order-now {
+        width: auto;
+        padding: 16px 18px;
+    }
+    .most-popular-price {
+        font-size: 26px;
+    }
+    .most-popular-price span {
+        font-size: 22px;
+    }
+}
 
 @media (max-width: 1400px) {
     .benefits-additional-display img {
@@ -617,7 +805,45 @@ footer {
     .meet-team-photo {
         flex-direction: column;
     }
+
+    .header-social-network {
+        margin-left: 31px;
+    }
+
+    .header-tel {
+        padding: 5px 14px 0;
+    }
+
+    .mane-menu {
+        margin-left: 30px;
+    }
+
+    .most-popular-price {
+        font-size: 22px;
+    }
+    .most-popular-price span {
+        font-size: 16px;
+    }
+
+    .btn-order-now {
+        font-size: 16px;
+    }
 }
+
+@media (max-width: 1200px) {
+    .most-popular-price {
+        font-size: 20px;
+    }
+    .most-popular-price span {
+        font-size: 14px;
+    }
+
+    .btn-order-now {
+        font-size: 16px;
+        padding: 13px 14px;
+    }
+}
+
 
 @media (max-width: 995px) {
     .our-benefits {
@@ -649,6 +875,132 @@ footer {
         padding-left: 26px;
     }
 }
+
+
+@media (max-width: 890px) {
+    .header-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header-contact {
+        display: none;
+        flex-wrap: wrap;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        display: block;
+    }
+
+    .header-tel::before {
+        display: none;
+    }
+
+    .header-content {
+        position: relative;
+    }
+
+    .mane-menu {
+        background-image: url('../image/menu-mobile.png');
+    }
+
+    .mane-menu:hover {
+        background-image: url('../image/menu-mobile-hover.png');
+    }
+
+    .header-contact.collapse.show {
+        background-color: #f7f7f7;
+        padding: 18px;
+        justify-content: space-around;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 90%;
+    }
+
+    .header-tel {
+        order: 1;
+        font-size: 18px;
+    }
+
+    .header-social-network {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .language {
+        order: 3;
+        margin-right: 0;
+    }
+
+    .mobile-menu {
+        order: 4;
+    }
+
+    .mobile-menu .dropdown-item {
+        text-align: center;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .mobile-menu .dropdown-item:focus, .mobile-menu .dropdown-item:hover {
+        background-color: #d4df35;
+    }
+
+    .mobile-menu .dropdown-item:active {
+        background-color: #a4af15;
+    }
+
+    .mane-mobile .header-contact {
+        display: block;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .mane-mobile {
+        display: block;
+    }
+
+    .mane-desctop {
+        display: none;
+    }
+
+    .main-text {
+        padding: 200px 0 200px 24px;
+    }
+
+    .main-section h1 {
+        font-size: 18px;
+        display: inline-block;
+        width: auto;
+    }
+
+    .main-section h2 {
+        font-size: 48px;
+        line-height: 60px;
+        margin: 19px -4px 45px;
+    }
+
+    .most-popular-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .most-popular-container {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+
+    .most-popular-title {
+        margin: 112px auto 40px;
+    }
+
+}
+
+
+
 
 @media (max-width: 650px) {
     .benefits-additional-display img {
