@@ -125,6 +125,10 @@ button:focus {
 	display: none;
 }
 
+.mobile-menu {
+	display: none;
+}
+
 @media (min-width: 1390px) {
 	.mane-menu .dropdown-menu {
 		top: -35px !important;
@@ -235,6 +239,7 @@ button:focus {
 
 	.mobile-menu {
 		width: 100%;
+		display: block;
 	}
 
 	.header-tel::before {
