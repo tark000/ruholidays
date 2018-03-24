@@ -14,7 +14,7 @@
   	<header class="container header-content justify-content-between">
       <div class="header-left">
         <div class="logo-text"><span class="logo-color">Russian</span> Holidays</div>
-        <nav dropdown class="mane-menu">
+        <nav dropdown class="mane-menu mane-desctop">
           <div class="menu-togle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu">
             <a class="dropdown-item" href="#faset-order">Fast order</a>
@@ -23,8 +23,9 @@
             <a class="dropdown-item" href="#our-team">Our team</a>
           </div>
         </nav>
+        <div class="mane-menu mane-mobile" data-toggle="collapse" href="#dropdownMenuMobile" role="button" aria-expanded="false" aria-controls="dropdownMenuMobile"></div>
       </div>
-      <div class="header-contact">
+      <div class="header-contact" class="collapse" id="dropdownMenuMobile">
         <div class="header-tel">+7 (123) 456-7890</div>
         <div class="dropdown show language">
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,6 +56,12 @@
           <a href="www.facebook.com" class="icon-facebook">
             <img src="image/facebook.png" class="icon-facebook">
           </a>
+        </div>
+        <div class="mobile-menu">
+          <a class="dropdown-item" href="#faset-order">Fast order</a>
+          <a class="dropdown-item" href="#benefits">Benefits</a>
+          <a class="dropdown-item" href="#our-tours">Our tours</a>
+          <a class="dropdown-item" href="#our-team">Our team</a>
         </div>
       </div>
     </header>
