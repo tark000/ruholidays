@@ -14,7 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 .container {
-    max-width: 1674px;
+    max-width: 1704px;
 }
 
 .container-footer {
@@ -99,8 +99,8 @@ header {
     font-size: 24px;
     font-weight: 700;
     background-color:  rgba(212, 223, 53, 0.5);
-    padding: 10px 15px;
-    width: 300px; 
+    padding: 6px 18px;
+    width: 297px; 
 }
 
 .main-section h2 {
@@ -110,7 +110,8 @@ header {
     font-weight: 700;
     line-height: 70px;
     text-transform: uppercase;
-    margin: 13px 0 35px;
+    margin: 22px -4px 35px;
+    letter-spacing: 4px;
 }
 
 .btn-quick-order {
@@ -124,6 +125,11 @@ header {
     padding: 20px 55px;
     position: relative;
     z-index: 2;
+    letter-spacing: 1px;
+}
+
+.add-margin {
+    margin-top: 38px;
 }
 
 .dotter-shadow {
@@ -147,8 +153,15 @@ header {
     background-image: url('../image/background-black.png');
 }
 
+.dotter-shadow.dotter-shadow-big-img::before { 
+    background-image: url('../image/background-black-big.png');
+    right: 121px;
+    width: 791px;
+    position: absolute;
+}
+
 .main-text {
-    padding: 105px 0 106px 118px;
+    padding: 237px 0 254px 159px;
 }
 
 .most-popular-title {
@@ -157,8 +170,8 @@ header {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 65px;
-    margin-bottom: 40px;
+    margin: 141px 10px 40px;
+    letter-spacing: 3px;
 }
 
 .most-popular-title span {
@@ -186,6 +199,7 @@ header {
     color: #000000;
     font-size: 30px;
     font-weight: 700;
+    padding: 7px 17px;
 }
 
 .most-popular-content {
@@ -195,10 +209,11 @@ header {
 
 .most-popular-content img {
     max-width: 100%;
+    width: 100%
 }
 
 .most-popular-container {
-    width: 22%;
+    width: 25%;
     position: relative;
 }
 
@@ -209,8 +224,8 @@ header {
     font-weight: 700;
     text-align: left;
     position: absolute;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 7px 17px 0 21px;
+    letter-spacing: 2px;
 }
 
 .most-popular-info {
@@ -231,8 +246,8 @@ header {
     font-weight: 700;
     text-align: center;
     background-color: #d4df35;
-    width: 145px;
-    padding: 15px 16px;
+    width: 171px;
+    padding: 15px 22px;
     position: relative;
     z-index: 2;
 }
@@ -250,7 +265,13 @@ header {
 }
 
 .present-trip img, .individual-trip img {
-    max-width: 50%;
+    max-width: 100%;
+    position: relative;
+    
+}
+
+.add-size {
+    width: 100%;
 }
 
 .present-trip-text {
@@ -301,7 +322,7 @@ header {
 }
 
 .additional-margin {
-    margin: 40px;
+    padding-top: 79px;
 }
 
 .our-benefits-background {
