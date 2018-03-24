@@ -95,7 +95,7 @@ header {
 }
 
 .main-section h1 {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #ffffff;
     font-size: 24px;
     font-weight: 700;
@@ -105,7 +105,7 @@ header {
 }
 
 .main-section h2 {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Bold;
     color:  #ffffff;
     font-size: 70px;
     font-weight: 700;
@@ -116,7 +116,7 @@ header {
 }
 
 .btn-quick-order {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
@@ -166,7 +166,7 @@ header {
 }
 
 .most-popular-title {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Bold;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -196,7 +196,7 @@ header {
     display: none;
 }
 .most-popular-price {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -219,7 +219,7 @@ header {
 }
 
 .most-popular-name {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Bold;
     color:  #ffffff;
     font-size: 24px;
     font-weight: 700;
@@ -234,14 +234,14 @@ header {
 }
 
 .most-popular-price span {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color: #000000;
     font-size: 24px;
     font-weight: 400;
 }
 
 .btn-order-now {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Bold;
     color:  #000000;
     font-size: 18px;
     font-weight: 700;
@@ -280,7 +280,7 @@ header {
 }
 
 .present-trip-text {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 16px;
     font-weight: 400;
@@ -295,12 +295,13 @@ header {
 }
 
 .individual-trip .individual-trip-title {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Bold;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
     text-align: right;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .individual-trip-title span {
@@ -308,7 +309,7 @@ header {
 }
 
 .individual-trip p{
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 16px;
     font-weight: 400;
@@ -352,7 +353,7 @@ header {
 }
 
 .our-benefits-number {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Bold;
     color:  #d4df35;
     font-size: 30px;
     font-weight: 700;
@@ -370,7 +371,7 @@ header {
 }
 
 .our-benefits-short-text {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
@@ -382,7 +383,7 @@ header {
 }
 
 .our-benefits-mask {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     background-color:  #d4df35;
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
     width: 396px;
@@ -425,7 +426,7 @@ header {
 }
 
 .meet-team-text {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 16px;
     font-weight: 400;
@@ -439,7 +440,7 @@ header {
 }
 
 .photo-name {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #0091ea;
     font-size: 18px;
     font-weight: 700;
@@ -476,7 +477,7 @@ footer {
 }
 
 .footer-main-name {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 14px;
     font-weight: 700;
@@ -486,7 +487,7 @@ footer {
 }
 
 .footer-main-description {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 16px;
     font-weight: 400;
@@ -524,7 +525,7 @@ footer {
 }
 
 .footer-subscribe-join {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 16px;
     font-weight: 700;
@@ -560,7 +561,7 @@ footer {
     background-color: #d4df35;
     width: 254px;
     height: 36px;
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 16px;
     font-weight: 700;
@@ -568,7 +569,7 @@ footer {
 }
 
 .made-by {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 14px;
     font-weight: 400;
