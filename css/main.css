@@ -119,7 +119,7 @@ header {
     font-weight: 700;
     line-height: 70px;
     text-transform: uppercase;
-    margin: 22px -4px 35px;
+    margin: 22px -4px 75px;
     letter-spacing: 4px;
 }
 
@@ -164,9 +164,16 @@ header {
 
 .dotter-shadow.dotter-shadow-big-img::before { 
     background-image: url('../image/background-black-big.png');
-    right: 43px;
-    width: 791px;
     position: absolute;
+    left: -8px;
+    width: 100%;
+    bottom: -8px;
+    top: auto;
+}
+
+.dotter-shadow.dotter-shadow-big-img.add-shadow-img::before {
+    left: 8px;
+
 }
 
 .main-text {
@@ -283,10 +290,6 @@ header {
     max-width: 50%;
 }
 
-.add-shadow-img::before {
-    left: 43px;
-}
-
 .present-trip-text {
     font-family: Avenir Next Cyr Regular;
     color:  #000000;
@@ -296,6 +299,8 @@ header {
     text-align: left;
     padding-left: 15px;
     margin: auto 0;
+    max-width: 50%;
+    width: 100%;
 }
 
 .present-trip-text span{
@@ -333,6 +338,8 @@ header {
     text-align: right;
     margin: auto 0;
     padding-right: 15px;
+    max-width: 50%;
+    width: 100%;
 }
 
 .aditional-margin {
