@@ -31,7 +31,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 header {
-    padding-top: 45px;
+    padding-top: 40px;
     padding-bottom: 45px;
 }
 
@@ -45,8 +45,8 @@ header {
 }
 
 .logo-color {
-    font-family: Avenir Next Cyr;
-    font-size: 26px;
+    font-family: Avenir Next Cyr Bold;
+    font-size: 28px;
     color:  #d4df35;
     font-weight: 800;
     text-transform: uppercase;
