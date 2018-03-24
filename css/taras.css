@@ -1,0 +1,81 @@
+.language > a:focus {
+	outline: 0;
+}
+.language-menu > .dropdown-item {
+	display: none;
+}
+
+.language-menu > .dropdown-item.active {
+	display: inline-block;
+	color: black;
+}
+
+.language {
+	margin-right: 10px;
+}
+
+.languages .active {
+	display: none;
+}
+
+.language-menu > .dropdown-item {
+	border: none;
+	background: transparent;
+	padding: 0;
+}
+
+.language-menu {
+	display: inline-block;
+}
+
+.language .dropdown-toggle::after {
+	border-style: solid;
+	border-width: 4px 3px 0 3px;
+    margin-left: -9px;
+	border-color: #000305 transparent transparent transparent;
+}
+
+.languages-list .dropdown-item:focus, .languages-list .dropdown-item:hover {
+	background-color: #d4df35;
+}
+
+.languages .dropdown-item {
+	padding: .25rem .5rem;
+}
+
+.languages.dropdown-menu {
+	min-width: 97px;
+	border: none;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+	border-radius: 0;
+}
+
+.dropdown.language .dropdown-toggle, .language .btn-secondary:not([disabled]):not(.disabled).active, .language .btn-secondary:not([disabled]):not(.disabled):active, .language .show>.btn-secondary.dropdown-toggle{
+	background-color: transparent;
+	border: none;
+	color: black;
+}
+
+.language .dropdown-toggle {
+	padding: 0;
+}
+
+.language-list .dropdown-item.active, .language-list .dropdown-item:active, .language-list .dropdown-item:focus, .language-list .dropdown-item:hover {
+	background-color: #d4df35;
+	color: black;
+}
+
+.language-list .dropdown-item:active {
+	background-color: #a4af15;
+}
+
+.languages img {
+	padding: 0px 7px;
+}
+button:focus {
+	outline: 0;
+}
+
+.languages .btn-secondary:not([disabled]):not(.disabled).active:focus, .languages .btn-secondary:not([disabled]):not(.disabled):active:focus, .languages .show>.btn-secondary.dropdown-toggle:focus {
+	box-shadow: none;
+}

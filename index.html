@@ -8,18 +8,35 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/taras.css">
   </head>
   <body>
   	<header class="container header-content justify-content-between">
       <div class="logo-text"><span class="logo-color">Russian</span> Holidays</div>
       <div class="header-contact">
         <div class="header-tel">+7 (123) 456-7890</div>
-        <div class="lang">ЯЗЫК</div>
-        <select class="selectpicker">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </select>
+        <div class="dropdown show language">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="languages language-menu">
+              <button class="dropdown-item active" href="#"><img src="image/UK.png" alt="UK">Eng</button>
+              <button class="dropdown-item" href="#"><img src="image/russia2.png" alt="Russia">Rus</button>
+              <button class="dropdown-item" href="#"><img src="image/portugal1.png" alt="Portugal">Por</button>
+              <button class="dropdown-item" href="#"><img src="image/france1.png" alt="France">Fra</button>
+              <button class="dropdown-item" href="#"><img src="image/italy1.png" alt="Italy">Ita</button>
+              <button class="dropdown-item" href="#"><img src="image/germany1.png" alt="Germany">Deu</button>
+              <button class="dropdown-item" href="#"><img src="image/spain1.png" alt="Spain">Spa</button>
+            </div>
+          </a>
+          <div class="dropdown-menu languages language-list" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item active" href="#"><img src="image/UK.png" alt="UK">Eng</a>
+            <a class="dropdown-item" href="#"><img src="image/russia2.png" alt="Russia">Rus</a>
+            <a class="dropdown-item" href="#"><img src="image/portugal1.png" alt="Portugal">Por</a>
+            <a class="dropdown-item" href="#"><img src="image/france1.png" alt="France">Fra</a>
+            <a class="dropdown-item" href="#"><img src="image/italy1.png" alt="Italy">Ita</a>
+            <a class="dropdown-item" href="#"><img src="image/germany1.png" alt="Germany">Deu</a>
+            <a class="dropdown-item" href="#"><img src="image/spain1.png" alt="Spain">Spa</a>
+          </div>
+        </div>
         <div class="header-social-network">
           <a href="www.instagram.com">
             <img src="image/instagram.png" class="icon-instagram">
