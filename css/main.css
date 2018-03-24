@@ -156,7 +156,7 @@ header {
 
 .dotter-shadow.dotter-shadow-big-img::before { 
     background-image: url('../image/background-black-big.png');
-    right: 121px;
+    right: 43px;
     width: 791px;
     position: absolute;
 }
@@ -214,7 +214,7 @@ header {
 }
 
 .most-popular-container {
-    width: 25%;
+    width: 24%;
     position: relative;
 }
 
@@ -267,12 +267,16 @@ header {
 
 .present-trip img, .individual-trip img {
     max-width: 100%;
-    position: relative;
-    
+    position: relative; 
 }
 
 .add-size {
     width: 100%;
+    max-width: 50%;
+}
+
+.add-shadow-img::before {
+    left: 43px;
 }
 
 .present-trip-text {
@@ -322,8 +326,8 @@ header {
     padding-right: 15px;
 }
 
-.additional-margin {
-    padding-top: 79px;
+.aditional-margin {
+    padding-top: 87px;
 }
 
 .our-benefits-background {
