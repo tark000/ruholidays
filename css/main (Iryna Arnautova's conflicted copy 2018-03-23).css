@@ -1,7 +1,7 @@
 /*
-Theme Name: RuHolidays
+Theme Name: КгРщдшвф
 Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: Iryna
+Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
 Version: 1.4
@@ -16,10 +16,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .container {
     max-width: 1674px;
-}
-
-.container-footer {
-    max-width: 1389px;
 }
 
 header {
@@ -385,76 +381,11 @@ header {
     display: block;
 }
 
-.meet-team-content, .meet-team-photo, .photo-content{
+.meet-team-text, .meet-team-photo {
     display: flex;
     justify-content: space-between;
 }
 
-.photo-content {
-    padding-top: 10px;
-}
-
-.meet-team-content {
-    margin: 0 auto;
-}
-
-.meet-team-text {
-    font-family: Avenir Next Cyr;
-    color:  #000000;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    padding: 0;
-}
-
-.meet-team-text span {
-    font-weight: 700;
-}
-
-.photo-name {
-    font-family: Avenir Next Cyr;
-    color:  #0091ea;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: left;
-    padding: 0;
-}
-
-.photo-text {
-    font-size: 14px;
-    text-align: left;
-    padding: 0;
-}
-
-.photo-text .font-lang  {
-    font-weight: 700;
-}
-
-.photo-year {
-    line-height: 29px;
-}
-
-footer {
-    background-color:  #f7f7f7;
-    margin-top: 50px;
-}
-
-.footer-general, .footer-location, .footer-contacts, .footer-follow-us {
-    display: flex;
-}
-
-.footer-general {
-    margin: 0 auto;
-}
-
-.footer-main-name {
-    font-family: Avenir Next Cyr;
-    color:  #000000;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: left;
-}
 
 
 
