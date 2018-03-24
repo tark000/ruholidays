@@ -22,6 +22,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
     max-width: 1389px;
 }
 
+.border-general {
+    border: none;
+}
+
+.border-general:focus {
+    outline: 0;
+}
+
+
 header {
     padding-top: 45px;
     padding-bottom: 45px;
@@ -139,14 +148,6 @@ header {
     background-image: url('../image/background-black.png');
 }
 
-.btn-quick-order:hover {
-    box-shadow: 0px 0px 23px 2px rgba(255,255,15,1);
-}
-
-.btn-quick-order:active {
-    background-color: #adb72c;
-}
-
 .main-text {
     padding: 105px 0 106px 118px;
 }
@@ -237,11 +238,11 @@ header {
     z-index: 2;
 }
 
-.btn-order-now:hover {
-    box-shadow: 0px 0px 23px 2px rgba(255,255,15,1);
+.btn-order-now:hover, .btn-subscribe:hover, .btn-quick-order:hover {
+    box-shadow: 0px 0px 7px 5px rgba(212,223,53,0.9);
 }
 
-.btn-order-now:active {
+.btn-order-now:active, .btn-subscribe:active, .btn-quick-order:active {
     background-color: #adb72c;
 }
 
@@ -445,7 +446,8 @@ footer {
 }
 
 .footer-general {
-    margin: 0 auto;
+    margin: auto;
+    padding-top: 30px;
 }
 
 .footer-main-name {
@@ -454,13 +456,101 @@ footer {
     font-size: 14px;
     font-weight: 700;
     text-align: left;
+    padding-left: 25px;
+    position: relative;
 }
 
+.footer-main-description {
+    font-family: Avenir Next Cyr;
+    color:  #000000;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 40px;
+}
 
+.location-mark::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../image/mark.png');
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
 
+.contacts-mark::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../image/telephone-mark.png');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    padding-right: 15px;
+    position: absolute;
+    left: -5px;
+    top: 2px;
+}
 
+.footer-network {
+    padding-left: 40px;
+}
 
+.footer-subscribe-join {
+    font-family: Avenir Next Cyr;
+    color:  #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
 
+.footer-subscribe input {
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    width: 254px;
+    margin-bottom: 20px;
+    background-image: url('../image/send-mail-mark.png');
+    background-repeat: no-repeat;
+    background-position: 100% 1px;
+    line-height: 30px;
+    font-family: Avenir Next Cyr;
+    color:  #000000;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    transition: linear 0s;
+}
+
+.footer-subscribe input:focus {
+    border-bottom: 2px solid #555555;
+}
+
+.btn-subscribe {
+    background-color: #d4df35;
+    width: 254px;
+    height: 36px;
+    font-family: Avenir Next Cyr;
+    color:  #000000;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.made-by {
+    font-family: Avenir Next Cyr;
+    color:  #000000;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: -18px;
+    padding-bottom: 20px;
+}
 
 
 
