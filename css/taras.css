@@ -169,6 +169,20 @@ button:focus {
 .header-contact.collapse.show {
 	display: flex;
 }
+@media (max-width: 1600px) {
+	.btn-order-now {
+		width: auto;
+	    padding: 16px 18px;
+	}
+	.most-popular-price {
+		font-size: 26px;
+	}
+	.most-popular-price span {
+		font-size: 22px;
+	}
+}
+
+
 
 @media (max-width: 1390px) {
 	.header-social-network {
@@ -181,6 +195,31 @@ button:focus {
 
 	.mane-menu {
 		margin-left: 30px;
+	}
+
+	.most-popular-price {
+		font-size: 22px;
+	}
+	.most-popular-price span {
+		font-size: 16px;
+	}
+
+	.btn-order-now {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.most-popular-price {
+		font-size: 20px;
+	}
+	.most-popular-price span {
+		font-size: 14px;
+	}
+
+	.btn-order-now {
+		font-size: 16px;
+	    padding: 13px 14px;
 	}
 }
 
@@ -288,5 +327,20 @@ button:focus {
 	    line-height: 60px;
 	    margin: 19px -4px 45px;
 	}
+
+	.most-popular-content {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.most-popular-container {
+		width: 48%;
+		margin-bottom: 25px;
+	}
+
+	.most-popular-title {
+	    margin: 112px auto 40px;
+	}
+
 }
 
