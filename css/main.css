@@ -51,23 +51,26 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     background-color:  #36496a;
-    padding: 7px 14px;
+    padding: 0 12px;
+    letter-spacing: 2px;
+    margin-right: 6px;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
 }
 
 .logo-text {
     font-family: Avenir Next Cyr Regular;
+    letter-spacing: 1px;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
 }
 
 .header-tel {
-    font-family: Avenir Next Cyr Regular;
+    font-family: Avenir Next Cyr Bold;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
-    padding-right: 15px;
+    padding: 5px 51px 0;
 }
 
 .header-tel::before {
@@ -77,7 +80,12 @@ header {
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
-    margin-right: 10px;
+    margin-right: 23px;
+}
+
+.header-social-network {
+    padding: 5px 0;
+    margin-left: 60px;
 }
 
 .icon-instagram, .icon-facebook {

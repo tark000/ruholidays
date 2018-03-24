@@ -89,6 +89,8 @@ button:focus {
 	background-image: url('../image/menu.png');
 	width: 45px;
 	height: 26px;
+    margin-left: 56px;
+    margin-top: 9px;
 }
 
 .mane-menu.show {
@@ -109,7 +111,7 @@ button:focus {
 	}
 	.mane-menu .dropdown-item {
 		display: inline;
-		font-family: AvenirNextCyr;
+		font-family: Avenir Next Cyr Regular;
 		color:  #000000;
 		font-size: 16px;/* Approximation due to font substitution */
 		border-radius: 5px;
