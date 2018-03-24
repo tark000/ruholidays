@@ -52,17 +52,18 @@ header {
     text-transform: uppercase;
     background-color:  #36496a;
     padding: 7px 14px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
 }
 
 .logo-text {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
 }
 
 .header-tel {
-    font-family: Avenir Next Cyr;
+    font-family: Avenir Next Cyr Regular;
     color:  #000000;
     font-size: 24px;
     font-weight: 700;
