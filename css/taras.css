@@ -76,6 +76,7 @@ button:focus {
 	outline: 0;
 }
 
-.languages .btn-secondary:not([disabled]):not(.disabled).active:focus, .languages .btn-secondary:not([disabled]):not(.disabled):active:focus, .languages .show>.btn-secondary.dropdown-toggle:focus {
+.language .btn-secondary:not([disabled]):not(.disabled).active:focus, .language .btn-secondary:not([disabled]):not(.disabled):active:focus, .language .show>.btn-secondary.dropdown-toggle:focus {
 	box-shadow: none;
 }
+
