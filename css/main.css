@@ -881,6 +881,112 @@ a.qtranxs_short {
     background-image: url('../image/spain1.png');
 }
 
+
+.modal-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    width: 254px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-family: Avenir Next Cyr Regular;
+    color:  #000000;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    transition: linear 0s;
+    background-repeat: no-repeat;
+    background-position: 100% 1px;
+}
+
+.modal-input:focus {
+    border-bottom: 2px solid #d4df35;
+}
+
+.modal-input-name {
+    background-image: url('../image/avatar.png');   
+}
+
+.modal-input-email {
+    background-image: url('../image/send-mail-mark.png');
+}
+
+.modal-input-tel {
+    background-image: url('../image/phone-call.png');
+}
+
+.modal-input-msg {
+    background-image: url('../image/edit.png');
+}
+
+.input-body-margin {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.input-send-form {
+    margin: 0 auto;
+}
+
+.input-send-form button {
+    width: 151px;
+}
+
+.modal-input-footer {
+    padding: 20px 0 50px;
+}
+
+.modal-window-title {
+    font-family: Avenir Next Cyr Bold;
+    color:  #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 5px
+}
+
+.modal-window-title span {
+    color:  #0092ee;
+}
+
+.form-request {
+    font-family: Avenir Next Cyr Regular;
+    color:  #000000;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.modal-input-header {
+    display: inline-block;
+}
+
+.modal-input-content {
+    border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1390px) {
     .mane-menu .dropdown-menu {
         top: -35px !important;
