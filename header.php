@@ -234,7 +234,10 @@
 
         
       </div>
-
+<?php $approach_posts = query_posts('category_name=approach');
+		$first_aprroach = $approach_posts[0];
+		$second_aprroach = $approach_posts[1];
+?>
       <div class="container aditional-margin">
         <div>
           <div class="present-trip">
@@ -243,17 +246,14 @@
               <img src="wp-content/themes/ruholidays/image/maxres-970.png" class="responsible-img">
             </div>
             <div class="present-trip-text">
-              <p class="present-trip-title"><span>Individual </span>Approach</p>
-              <p>Our excursions are wonderful trips in space and time, where we will see not only the famous sights of St.Petersburg, but also we will look to <span>where the foot of tourist does not often step.</span></p>
-              <p>We will acquaint you with the secrets, legends and secrets of this wonderful city.</p>
-              <p>If you are in St.Petersburg not for the first time, <span>we will show you the city from a completely new side.</span></p>
+              <p class="present-trip-title"><?php echo $first_aprroach->post_title; ?></p>
+              <p><?php echo $first_aprroach->post_content; ?></p>
             </div>
           </div>
           <div class="individual-trip">
             <div class="individual-trip-text">
-              <p class="individual-trip-title"><span>Individual </span>Approach</p>
-              <p class="additional-style">Individual approach for us is not just an on-duty phrase.</p>
-              <p>We will plan for you a personal program of acquaintance with the city taking into account all your wishes (including the organization of transfers, reservations of restaurants and tickets to museums or theaters of the city).</p>
+              <p class="individual-trip-title"><?php echo $second_aprroach->post_title; ?></p>
+              <p><?php echo $second_aprroach->post_content; ?></p>
             </div>
             <div class="dotter-shadow dotter-shadow-big-img add-shadow-img add-size">
               <img src="wp-content/themes/ruholidays/image/highlights.png" class="desktop-img">
