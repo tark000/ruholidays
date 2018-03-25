@@ -2,15 +2,15 @@
     <footer>
       <div class="container footer-general justify-content-between ">
         <div class="footer-location justify-content-between">
-          <div class="footer-main-name location-mark">Location</div>
+          <div class="footer-main-name location-mark"><?php _e("[:ru]Наше расположение[:en]Location[:de]Standort[:es]Localizacion[:fr]Localisation[:it]posizione[:pt]Localização[:]"); ?> </div>
           <div class="footer-main-description location-changes">Saint Petersburg,<br> Zaporozhskaya street, 12</div>
         </div>
         <div class="footer-contacts justify-content-between">
-          <div class="footer-main-name contacts-mark">Contacts</div>
+          <div class="footer-main-name contacts-mark"><?php _e("[:ru]Контакты[:en]Contacts[:de]Kontakte[:es]Contactos[:fr]Contacts[:it]Contatti[:pt]Contatos[:]"); ?>Contacts</div>
           <div class="footer-main-description contacts-changes">+7 (123) 123-4567<br>+7 (123) 123-4567</div>
         </div>
         <div class="footer-follow-us">
-          <div class="footer-main-name follow-us-changes">Follow us</div>
+          <div class="footer-main-name follow-us-changes"><?php _e("[:ru]Подписывайтесь на нас в соцсетях[:en]Follow us[:de]Folge uns[:es]Síguenos[:fr]Suivez nous[:it]Seguici[:pt]Siga-nos[:]"); ?></div>
           <div class="header-social-network footer-network">
             <a href="https://www.instagram.com/russianholiday/">
               <img src="wp-content/themes/ruholidays/image/instagram.png" class="icon-instagram">
@@ -21,12 +21,12 @@
           </div>
         </div>
         <div class="footer-subscribe ">
-          <div class="footer-subscribe-join">Join our mailing list</div>
+          <div class="footer-subscribe-join"><?php _e("[:ru]Присоединяйтесь к нашему списку рассылки[:en]Join our mailing list[:de]Trete unserer Mailing-Liste bei[:es]Únete a nuestra lista de correo[:fr]Rejoignez notre liste de diffusion[:it]Iscriviti alla nostra mailing list[:pt]Junte-se à nossa mailing list[:]"); ?> </div>
           <div>
-            <input type="email" placeholder="Email address">
+            <input type="email" placeholder='Email address'>
           </div>
           <div>
-            <button type="button" class="btn-subscribe border-general">Subscribe now</button>
+            <button type="button" class="btn-subscribe border-general"><?php _e("[:ru]Записаться сейчас[:en]Subscribe now[:de]Jetzt abonnieren[:es]Suscríbete ahora[:fr]Inscrivez-vous maintenant[:it]Iscriviti ora[:pt]Assine agora[:]"); ?></button>
           </div>
         </div>
       </div>
@@ -40,8 +40,8 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <h4 class="modal-title modal-window-title" id="exampleModalLabel">Let's order <span>right now</span></h4>
-              <h5 class="form-request">Leave a request and we will contact you</h5>
+              <h4 class="modal-title modal-window-title" id="exampleModalLabel"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Let's order <span>right now</span></h4>
+              <h5 class="form-request"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Leave a request and we will contact you</h5>
             </div>
             <div class="modal-body input-body-margin">
               <form>

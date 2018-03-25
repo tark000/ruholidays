@@ -16,10 +16,10 @@
         <nav dropdown class="mane-menu mane-desctop">
           <div class="menu-togle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-            <a class="dropdown-item" href="#faset-order">Fast order</a>
-            <a class="dropdown-item" href="#benefits">Benefits</a>
-            <a class="dropdown-item" href="#our-tours">Our tours</a>
-            <a class="dropdown-item" href="#our-team">Our team</a>
+            <a class="dropdown-item" href="#faset-order"><?php _e("[:ru]Быстрый заказ[:en]Fast Order[:de]Schnelle Bestellung[:es]Pedido rápido[:fr]Commande rapide[:it]Ordine veloce[:pt]Ordem Rápida[:]"); ?></a>
+            <a class="dropdown-item" href="#benefits"><?php _e("[:ru]Преимущества[:en]Benefits[:de]Vorteile[:es]Beneficios[:fr]Avantages[:it]Vantaggi[:pt]Benefícios[:]"); ?></a>
+            <a class="dropdown-item" href="#our-tours"><?php _e("[:ru]Наши туры[:en]Our tours[:de]Unsere Touren[:es]Nuestros tours[:fr]Nos tours[:it]I nostri tour[:pt]Nossos passeios[:]"); ?></a>
+            <a class="dropdown-item" href="#our-team"><?php _e("[:ru]Наша команда[:en]Our team[:de]Unser Team[:es]Nuestro equipo[:fr]Notre équipe[:it]Il nostro team[:pt]Nossa equipe[:]"); ?></a>
           </div>
         </nav>
         <div class="mane-menu mane-mobile" data-toggle="collapse" href="#dropdownMenuMobile" role="button" aria-expanded="false" aria-controls="dropdownMenuMobile"></div>
@@ -82,26 +82,26 @@
           </a>
         </div>
         <div class="mobile-menu">
-          <a class="dropdown-item" href="#faset-order">Fast order</a>
-          <a class="dropdown-item" href="#benefits">Benefits</a>
-          <a class="dropdown-item" href="#our-tours">Our tours</a>
-          <a class="dropdown-item" href="#our-team">Our team</a>
+          <a class="dropdown-item" href="#faset-order"><?php _e("[:ru]Быстрый заказ[:en]Fast Order[:de]Schnelle Bestellung[:es]Pedido rápido[:fr]Commande rapide[:it]Ordine veloce[:pt]Ordem Rápida[:]"); ?></a>
+          <a class="dropdown-item" href="#benefits"><?php _e("[:ru]Преимущества[:en]Benefits[:de]Vorteile[:es]Beneficios[:fr]Avantages[:it]Vantaggi[:pt]Benefícios[:]"); ?></a>
+          <a class="dropdown-item" href="#our-tours"><?php _e("[:ru]Наши туры[:en]Our tours[:de]Unsere Touren[:es]Nuestros tours[:fr]Nos tours[:it]I nostri tour[:pt]Nossos passeios[:]"); ?></a>
+          <a class="dropdown-item" href="#our-team"><?php _e("[:ru]Наша команда[:en]Our team[:de]Unser Team[:es]Nuestro equipo[:fr]Notre équipe[:it]Il nostro team[:pt]Nossa equipe[:]"); ?></a>
         </div>
       </div>
     </header>
 
     <section class="main-section">
       <div class="container main-text">
-        <h1>Individual tours around</h1>
+        <h1><?php _e("[:ru]Индивидуальные туры по Санкт-Петербургу[:en]Individual tours around SPb[:de]Individuelle Touren rund um Sankt Petersburg[:es]Tours individuales alrededor de San Petersburgo[:fr]Visites individuelles autour de SPb[:it]Tour individuali intorno a SPB[:pt]Viagens individuais ao redor do SPb[:]"); ?></h1>
         <h2>Saint-<br>Petersburg</h2>
         <span class="dotter-shadow">
-          <button type="button" class="btn-quick-order border-general" data-toggle="modal" data-target="#exampleModal">Quick order</button>
+          <button type="button" class="btn-quick-order border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Быстрый заказ[:en]Quick order[:de]Schnelle Bestellung[:es]Orden rápida[:fr]Commande rapide[:it]Ordine rapido[:pt]Pedido rápido[:]"); ?></button>
         </span>
       </div>
     </section>
 
     <section class="container most-popular">
-      <h1 class="most-popular-title">The most <span>popular</span></h1>
+      <h1 class="most-popular-title"><?php _e("[:ru]Самые[:en]The most[:de]Das[:es]El más[:fr]Le plus[:it]Il più[:pt]O mais[:]"); ?>The most <span><?php _e("[:ru]популярные[:en]popular[:de]beliebteste[:es]popular[:fr]populaire[:it]popolare[:pt]popular[:]"); ?>popular</span></h1>
       <div class="most-popular-content justify-content-between">
         
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
@@ -158,7 +158,7 @@
                       <div class="col-12 col-sm-4">
                         <div class="modal-input-footer">
                           <span class="dotter-shadow black-shadow input-send-form">
-                            <button type="button" class="btn-order-now border-general">Order now</button>
+                            <button type="button" class="btn-order-now border-general"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
                           </span>
                         </div>
                       </div>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b>Duration:</b>
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Duration:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('duration'); ?>
@@ -182,7 +182,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b>Limits:</b>
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Limits:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('limits'); ?>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b>Physical activity:</b>
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Physical activity:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('physical_activity'); ?>
@@ -199,11 +199,11 @@
                     <div class="row justify-content-between add-margin-top">
                       <div class="col-12 col-sm-6">
                         
-                        <b>Included:</b><br>
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Included:</b><br>
                         <?php echo the_field('included'); ?>
                       </div>
                       <div class="col-12 col-sm-6">
-                        <b>Not included:</b><br>
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Not included:</b><br>
                         <?php echo the_field('not_included'); ?>
                       </div>
                     </div>
@@ -220,7 +220,7 @@
               </div>
               <div>
                 <span class="dotter-shadow black-shadow">
-                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal">Order now</button>
+                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
                 </span>
               </div>
             </div>
@@ -243,7 +243,7 @@
               <img src="wp-content/themes/ruholidays/image/maxres-970.png" class="responsible-img">
             </div>
             <div class="present-trip-text">
-              <p class="present-trip-title"><span>Individual</span> Approach</p>
+              <p class="present-trip-title"><span>Individual </span>Approach</p>
               <p>Our excursions are wonderful trips in space and time, where we will see not only the famous sights of St.Petersburg, but also we will look to <span>where the foot of tourist does not often step.</span></p>
               <p>We will acquaint you with the secrets, legends and secrets of this wonderful city.</p>
               <p>If you are in St.Petersburg not for the first time, <span>we will show you the city from a completely new side.</span></p>
@@ -251,7 +251,7 @@
           </div>
           <div class="individual-trip">
             <div class="individual-trip-text">
-              <p class="individual-trip-title"><span>Individual</span> Approach</p>
+              <p class="individual-trip-title"><span>Individual </span>Approach</p>
               <p class="additional-style">Individual approach for us is not just an on-duty phrase.</p>
               <p>We will plan for you a personal program of acquaintance with the city taking into account all your wishes (including the organization of transfers, reservations of restaurants and tickets to museums or theaters of the city).</p>
             </div>
@@ -267,7 +267,7 @@
 
 
     <section id="benefits">
-      <h1 class="container most-popular-title add-right remove-padd">Our <span>benefits<span></h1>
+      <h1 class="container most-popular-title add-right remove-padd"><?php _e("[:ru]Наши[:en]Our[:de]Unsere[:es]Nuestros[:fr]Nos[:it]I nostri[:pt]Nossos[:]"); ?> <span><?php _e("[:ru]преимущества[:en]benefits[:de]Vorteile[:es]beneficios[:fr]avantages[:it]benefici[:pt]benefícios[:]"); ?><span></h1>
       <div class="our-benefits-background">
         <div class="container our-benefits justify-content-between">
           <div class="our-benefits-f">
@@ -336,7 +336,7 @@
     </section>
     <section>
       <div class="container remove-padd" id="our-tours">
-        <h1 class="most-popular-title remove-add-margin">Our <span>autor's tours</span></h1>
+        <h1 class="most-popular-title remove-add-margin"><?php _e("[:ru]Наши[:en]Our[:de]Unsere[:es]Nuestros[:fr]Les visites de[:it]I tour del[:pt]Passeios[:]"); ?> <span><?php _e("[:ru]авторские туры[:en]author's tours[:de]Touren[:es]viajes[:fr]notre auteur[:it]nostro autore[:pt]do nosso autor[:]"); ?></span></h1>
       
 
 
@@ -345,7 +345,7 @@
       </div>
     </section>
     <section id="our-team">
-      <h1 class="container most-popular-title remove-padd">Meet <span>the team</span></h1>
+      <h1 class="container most-popular-title remove-padd"><?php _e("[:ru]Познакомьтесь[:en]Meet[:de]Treffen[:es]Conoce[:fr]Rencontrez[:it]Incontra[:pt]Conheça[:]"); ?>Meet <span><?php _e("[:ru]с командой[:en]the team[:de]Sie das Team[:es]al equipo[:fr]l'équipe[:it]la squadra[:pt]a equipe[:]"); ?>the team</span></h1>
       <div class="container meet-team-content justify-content-between">
         <div class="meet-team-text">
           <p><b>We are a team of young, active people who are ready to decorate your holiday in the cultural capital of Russia.</b> We really love St.Petersburg and try toconvey our love to every guest whocomes to visit our city.</p>
@@ -359,9 +359,9 @@
             <div class="photo-content">
               <div class="photo-name">Zoya</div>
               <div class="photo-text">
-                <div class="photo-year">5 years in tourism</div>
-                <div class="font-lang">Languages:</div>
-                <div class="">Russian, English, German, Spanish</div>
+                <div class="photo-year"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> 5 years in tourism</div>
+                <div class="font-lang"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Languages:</div>
+                <div class=""><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Russian, English, German, Spanish</div>
               </div>
             </div>
           </div>
@@ -370,9 +370,9 @@
             <div class="photo-content">
               <div class="photo-name">Maksim</div>
               <div class="photo-text">
-                <div class="photo-year">10 years in tourism</div>
-                <div class="font-lang">Languages:</div>
-                <div class="">Russian, English</div>
+                <div class="photo-year"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> 10 years in tourism</div>
+                <div class="font-lang"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Languages:</div>
+                <div class=""><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Russian, English</div>
               </div>
             </div>
           </div>
