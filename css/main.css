@@ -968,8 +968,45 @@ button:focus {
         margin-bottom: 100px;
     }
 
-}
+    .footer-location, .footer-contacts, .footer-follow-us, .footer-subscribe {
+        flex-direction: column; 
+    }
 
+    .location-mark {
+        margin-left: 15px;
+    }
+
+    .location-changes {
+        margin-bottom: 54px;
+        padding-left: 15px;
+    }
+
+    .contacts-changes {
+        margin-bottom: 54px;
+        padding-left: 0;
+    }
+
+    .footer-network {
+        margin-left: 0;
+        padding-left: 24px;
+    }
+
+    .follow-us-changes {
+        margin-bottom: 15px;
+    }
+
+    .made-by {
+        margin-left: 15px;
+    }
+
+    .footer-subscribe input, .btn-subscribe {
+        width: 225px;
+    }
+
+    footer { 
+        padding-right: 15px;
+    }
+}
 
 @media (max-width: 890px) {
     .header-left {
@@ -1210,10 +1247,6 @@ button:focus {
         flex-wrap: wrap;
     }
 
-    .footer-location {
-        display: inline; 
-    }
-
     .location-mark {
         margin-left: 15px;
     }
@@ -1231,9 +1264,7 @@ button:focus {
         padding-left: 15px;
     }
 
-    .footer-follow-us {
-        flex-direction: column;
-    }
+    
 
     .footer-network {
         padding: 15px 0 0 15px;
