@@ -187,7 +187,7 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     margin: 141px auto 40px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .most-popular-title span {
@@ -210,7 +210,7 @@ header {
     display: none;
 }
 .most-popular-price {
-    font-family: Avenir Next Cyr Regular;
+    font-family: Avenir Next Cyr Bold;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -603,6 +603,10 @@ footer {
     padding-bottom: 20px;
 }
 
+.responsible-img {
+    display: none;
+}
+
 a, button, .mane-menu {
     transition: linear 0.1s
 }
@@ -681,6 +685,7 @@ a, button, .mane-menu {
 .languages img {
     padding: 0px 7px;
 }
+
 button:focus {
     outline: 0;
 }
@@ -745,7 +750,7 @@ button:focus {
         display: inline;
         font-family: Avenir Next Cyr Demi;
         color:  #000000;
-        font-size: 18px;/* Approximation due to font substitution */
+        font-size: 18px;
         border-radius: 5px;
         font-weight: 400;
     }
@@ -863,6 +868,30 @@ button:focus {
 
 
 @media (max-width: 995px) {
+    .most-popular-title {
+        margin-left: -126px;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .responsible-img {
+    display: inline;
+    }
+
+    .most-popular-title::before {
+        margin-right: 20px;
+    }
+
+    .most-popular-price {
+        font-size: 30px;
+    }
+
+    .aditional-margin {
+        padding-top: 0;
+    }
+
     .our-benefits {
         flex-wrap: wrap;
         justify-content: space-around!important;
@@ -891,6 +920,54 @@ button:focus {
     .meet-team-text {
         padding-left: 26px;
     }
+
+    .most-popular-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .most-popular-container {
+        width: 48%;
+        margin-bottom: 25px;
+    }
+
+    .dotter-shadow::before {
+        top: 10px;
+        right: -9px;
+    }
+
+    .add-right:after {
+        width: 140px;
+        margin-left: 20px;
+    }
+
+    .add-right {
+        padding-right: 0;
+        margin-left: 8px;
+    }
+
+    .remove-add-margin {
+        margin-top: 0;
+    }
+
+    .add-function img {
+        width: 200px;
+        height: 227px;
+        position: relative;
+    }
+
+    .photo-content {
+        position: absolute;
+        bottom: 48px;
+        left: 232px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .class-zoya {
+        margin-bottom: 100px;
+    }
+
 }
 
 
@@ -1081,6 +1158,7 @@ button:focus {
         width: 60px;
         margin-left: 40px;
     }
+
     .our-benefits {
             padding: 60px 0 175px;
     }
@@ -1104,7 +1182,7 @@ button:focus {
 
     .meet-team-text span {
         font-weight: 700;
-        font-family: Avenir Next Cyr Demi;
+        font-family: Avenir Next Cyr Bold;
     }
 
     .add-function {
@@ -1130,6 +1208,10 @@ button:focus {
     .footer-location, .footer-contacts, .footer-follow-us, .footer-subscribe {
         max-width: 48%;
         flex-wrap: wrap;
+    }
+
+    .footer-location {
+        display: inline; 
     }
 
     .location-mark {
