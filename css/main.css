@@ -763,6 +763,10 @@ button:focus {
     vertical-align: 0.8em;
 }
 
+.language-menu .language-chooser {
+    z-index: -1;
+}
+
 .language-chooser {
     padding: 0;
     list-style: none;

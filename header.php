@@ -27,13 +27,50 @@
       <div class="header-contact" class="collapse" id="dropdownMenuMobile">
         <div class="header-tel">+7 (123) 456-7890</div>
         <div class="dropdown show language">
-          <batton class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="languages language-menu">
-              <?php qtranxf_generateLanguageSelectCode('short'); ?>
-            </div>
-          </batton>
-          <div class="dropdown-menu languages language-list" aria-labelledby="dropdownMenuLink">
+             <!--  <button class="dropdown-item active" href="#"><img src="image/UK.png" alt="UK">Eng</button>
+              <button class="dropdown-item" href="#"><img src="image/russia2.png" alt="Russia">Rus</button>
+              <button class="dropdown-item" href="#"><img src="image/portugal1.png" alt="Portugal">Por</button>
+              <button class="dropdown-item" href="#"><img src="image/france1.png" alt="France">Fra</button>
+              <button class="dropdown-item" href="#"><img src="image/italy1.png" alt="Italy">Ita</button>
+              <button class="dropdown-item" href="#"><img src="image/germany1.png" alt="Germany">Deu</button>
+              <button class="dropdown-item" href="#"><img src="image/spain1.png" alt="Spain">Spa</button> -->
+              
             <?php qtranxf_generateLanguageSelectCode('short'); ?>
+              
+
+              <!-- <ul class="language-chooser language-chooser-short qtranxs_language_chooser" id="qtranslate-chooser">
+                <li><a href="http://ruholidays.com/?lang=en" class="qtranxs_short_en qtranxs_short" title="English (en)"><span>en</span></a></li>
+                <li><a href="http://ruholidays.com/?lang=ru" class="qtranxs_short_ru qtranxs_short" title="Русский (ru)"><span>ru</span></a></li>
+                <li><a href="http://ruholidays.com/?lang=pt" class="qtranxs_short_pt qtranxs_short" title="Português (pt)"><span>pt</span></a></li>
+                <li><a href="http://ruholidays.com/?lang=es" class="qtranxs_short_es qtranxs_short" title="Español (es)"><span>es</span></a></li>
+                <li><a href="http://ruholidays.com/?lang=de" class="qtranxs_short_de qtranxs_short" title="Deutsch (de)"><span>de</span></a></li>
+                <li><a href="http://ruholidays.com/?lang=fr" class="qtranxs_short_fr qtranxs_short" title="Français (fr)"><span>fr</span></a></li>
+                <li class="active"><a href="http://ruholidays.com/?lang=it" class="qtranxs_short_it qtranxs_short" title="Italiano (it)"><span>it</span></a></li>
+              </ul> -->
+            </div>
+          </button>
+          <div class="dropdown-menu languages language-list" aria-labelledby="dropdownMenuLink">
+            <!-- <a class="dropdown-item active" href="#"><img src="image/UK.png" alt="UK">Eng</a>
+            <a class="dropdown-item" href="#"><img src="image/russia2.png" alt="Russia">Rus</a>
+            <a class="dropdown-item" href="#"><img src="image/portugal1.png" alt="Portugal">Por</a>
+            <a class="dropdown-item" href="#"><img src="image/france1.png" alt="France">Fra</a>
+            <a class="dropdown-item" href="#"><img src="image/italy1.png" alt="Italy">Ita</a>
+            <a class="dropdown-item" href="#"><img src="image/germany1.png" alt="Germany">Deu</a>
+            <a class="dropdown-item" href="#"><img src="image/spain1.png" alt="Spain">Spa</a> -->
+
+            <?php qtranxf_generateLanguageSelectCode('short'); ?>
+
+            <!-- <ul class="language-chooser language-chooser-short qtranxs_language_chooser" id="qtranslate-chooser">
+              <li><a href="http://ruholidays.com/?lang=en" class="qtranxs_short_en qtranxs_short" title="English (en)"><span>en</span></a></li>
+              <li><a href="http://ruholidays.com/?lang=ru" class="qtranxs_short_ru qtranxs_short" title="Русский (ru)"><span>ru</span></a></li>
+              <li><a href="http://ruholidays.com/?lang=pt" class="qtranxs_short_pt qtranxs_short" title="Português (pt)"><span>pt</span></a></li>
+              <li><a href="http://ruholidays.com/?lang=es" class="qtranxs_short_es qtranxs_short" title="Español (es)"><span>es</span></a></li>
+              <li><a href="http://ruholidays.com/?lang=de" class="qtranxs_short_de qtranxs_short" title="Deutsch (de)"><span>de</span></a></li>
+              <li><a href="http://ruholidays.com/?lang=fr" class="qtranxs_short_fr qtranxs_short" title="Français (fr)"><span>fr</span></a></li>
+              <li class="active"><a href="http://ruholidays.com/?lang=it" class="qtranxs_short_it qtranxs_short" title="Italiano (it)"><span>it</span></a></li>
+            </ul> -->
           </div>
         </div>
         <div class="header-social-network">
@@ -52,39 +89,152 @@
         </div>
       </div>
     </header>
+
     <section class="main-section">
       <div class="container main-text">
         <h1>Individual tours around</h1>
         <h2>Saint-<br>Petersburg</h2>
         <span class="dotter-shadow">
-          <button type="button" class="btn-quick-order border-general">Quick order</button>
+          <button type="button" class="btn-quick-order border-general" data-toggle="modal" data-target="#exampleModal">Quick order</button>
         </span>
       </div>
     </section>
+
     <section class="container most-popular">
       <h1 class="most-popular-title">The most <span>popular</span></h1>
       <div class="most-popular-content justify-content-between">
-         <?php if (have_posts()): while (have_posts()): the_post(); ?>
-          <?php echo the_field(); ?>
-          <?php echo the_field('includes'); ?>
-    		  <div class="most-popular-container">
-    			  <div class="most-popular-name"><?php the_title(); ?></div>
-    			  <img src="<?php the_field('image'); ?>">
-    			  <div class="most-popular-info justify-content-between">
-    				<div class="most-popular-price">
-    				  <?php echo the_field('price'); ?>€ <span>/5 hours</span>
-    				</div>
-    				<div>
-    				  <span class="dotter-shadow black-shadow">
-    					<button type="button" class="btn-order-now border-general">Order now</button>
-    				  </span>
-    				</div>
-    			  </div>
-    			</div>
-    		<?php endwhile; endif; ?>
-		 
+        
+        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+          
+          <div class="most-popular-container">
+            <div class="most-popular-name"><?php the_title(); ?></div>
+            <img src="<?php echo the_field('image'); ?>" data-toggle="modal" data-target="#exampleModalCenter-<?php the_id(); ?>" alt="<?php the_title(); ?>">
+  
+  <!-- Modal window START-->
+            <div class="modal fade" id="exampleModalCenter-<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle-<?php the_id(); ?>" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-form-description" role="document">
+              <div class="modal-content modal-form-content">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <img src="<?php echo the_field('image'); ?>" alt="<?php the_title(); ?>">
+                    <div class="row justify-content-between">
+                      <div class="col-12 col-sm-6 modal-form-price-pic">
+                        <?php echo the_field('price'); ?>€*<span>/<?php echo the_field('time'); ?></span>
+                      </div>
+                      <div class="col-12 col-sm-6 modal-form-text-pic">
+                        <?php echo the_field('add_info'); ?>
+                      </div>
+                    </div>
+                    <div class="modal-form-text-booking">
+                    <?php echo the_field('cost'); ?>
+                    </div>
+                    <div class="row justify-content-between">
+                      <div class="col-12 col-sm-8 modal-form-people">
+                        <div class="row justify-content-between modal-form-people-cost-border">
+                          <div class="col-12 col-sm-6 modal-form-people">
+                            <b><?php echo the_field('people3-5'); ?></b>
+                          </div>
+                          <div class="col-12 col-sm-6 modal-form-cost">
+                            <?php echo the_field('people_3-5_price'); ?>
+                          </div>
+                        </div>
+                        <div class="row justify-content-between modal-form-people-cost-border">
+                          <div class="col-12 col-sm-6 modal-form-people">
+                            <b><?php echo the_field('people_6-19'); ?></b>
+                          </div>
+                          <div class="col-12 col-sm-6 modal-form-cost">
+                            <?php echo the_field('people_6-19_price'); ?>
+                          </div>
+                        </div>
+                        <div class="row justify-content-between modal-form-people-cost-border">
+                          <div class="col-12 col-sm-6 modal-form-people">
+                            <b><?php echo the_field('people20'); ?></b>
+                          </div>
+                          <div class="col-12 col-sm-6 modal-form-cost">
+                            <?php echo the_field('people_20_price'); ?>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <div class="modal-input-footer">
+                          <span class="dotter-shadow black-shadow input-send-form">
+                            <button type="button" class="btn-order-now border-general">Order now</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title modal-form-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
+                    <div class="modal-form-text-title">
+                      <?php the_content(); ?>
+                    </div>
+                    <div class="row justify-content-between modal-form-people-cost-border">
+                      <div class="col-12 col-sm-5">
+                        <b>Duration:</b>
+                      </div>
+                      <div class="col-12 col-sm-7 text-align-right">
+                        <?php echo the_field('duration'); ?>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between modal-form-people-cost-border">
+                      <div class="col-12 col-sm-5">
+                        <b>Limits:</b>
+                      </div>
+                      <div class="col-12 col-sm-7 text-align-right">
+                        <?php echo the_field('limits'); ?>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between modal-form-people-cost-border">
+                      <div class="col-12 col-sm-5">
+                        <b>Physical activity:</b>
+                      </div>
+                      <div class="col-12 col-sm-7 text-align-right">
+                        <?php echo the_field('physical_activity'); ?>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between add-margin-top">
+                      <div class="col-12 col-sm-6">
+                        
+                        <b>Included:</b><br>
+                        <?php echo the_field('included'); ?>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <b>Not included:</b><br>
+                        <?php echo the_field('not_included'); ?>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+  <!-- Modal window END-->
+           
+            <div class="most-popular-info justify-content-between">
+              <div class="most-popular-price">
+                <?php echo the_field('price'); ?>€* <span>/<?php echo the_field('time'); ?></span>
+              </div>
+              <div>
+                <span class="dotter-shadow black-shadow">
+                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal">Order now</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        <?php endwhile; endif; ?>
+        
+
+
+
+
+
         
       </div>
+
       <div class="container aditional-margin">
         <div>
           <div class="present-trip">
@@ -93,6 +243,7 @@
               <img src="wp-content/themes/ruholidays/image/maxres-970.png" class="responsible-img">
             </div>
             <div class="present-trip-text">
+              <p class="present-trip-title"><span>Individual</span> Approach</p>
               <p>Our excursions are wonderful trips in space and time, where we will see not only the famous sights of St.Petersburg, but also we will look to <span>where the foot of tourist does not often step.</span></p>
               <p>We will acquaint you with the secrets, legends and secrets of this wonderful city.</p>
               <p>If you are in St.Petersburg not for the first time, <span>we will show you the city from a completely new side.</span></p>
@@ -112,6 +263,9 @@
         </div>
       </div>
     </section>
+
+
+
     <section id="benefits">
       <h1 class="container most-popular-title add-right remove-padd">Our <span>benefits<span></h1>
       <div class="our-benefits-background">
@@ -225,42 +379,4 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="container footer-general justify-content-between ">
-        <div class="footer-location justify-content-between">
-          <div class="footer-main-name location-mark">Location</div>
-          <div class="footer-main-description location-changes">Saint Petersburg,<br> Zaporozhskaya street, 12</div>
-        </div>
-        <div class="footer-contacts justify-content-between">
-          <div class="footer-main-name contacts-mark">Contacts</div>
-          <div class="footer-main-description contacts-changes">+7 (123) 123-4567<br>+7 (123) 123-4567</div>
-        </div>
-        <div class="footer-follow-us">
-          <div class="footer-main-name follow-us-changes">Follow us</div>
-          <div class="header-social-network footer-network">
-            <a href="https://www.instagram.com/russianholiday/">
-              <img src="wp-content/themes/ruholidays/image/instagram.png" class="icon-instagram">
-            </a>
-            <a href="https://www.facebook.com/ruholidays/?ti=as" class="icon-facebook">
-              <img src="wp-content/themes/ruholidays/image/facebook.png" class="icon-facebook">
-            </a>
-          </div>
-        </div>
-        <div class="footer-subscribe ">
-          <div class="footer-subscribe-join">Join our mailing list</div>
-          <div>
-            <input type="email" placeholder="Email address" aria-label="Email address">
-          </div>
-          <div>
-            <button type="button" class="btn-subscribe border-general">Subscribe now</button>
-          </div>
-        </div>
-      </div>
-      <div class="made-by container">2018 by Ruholidays</div> 
-    </footer>
-    <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="wp-content/themes/ruholidays/js/popper.min.js"></script>
-    <script type="text/javascript" src="wp-content/themes/ruholidays/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="wp-content/themes/ruholidays/js/script.js"></script>
-  </body>
-</html>
+
