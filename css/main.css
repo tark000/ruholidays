@@ -995,6 +995,34 @@ button:focus {
         flex-direction: column;
     }
 
+    .footer-location, .footer-contacts, .footer-follow-us {
+        flex-direction: column;
+    }
+
+    .location-mark {
+        margin-left: 14px;
+    }
+
+    .location-changes {
+        padding-left: 15px;
+        margin-bottom: 45px;
+    }
+
+    .contacts-changes {
+        padding-left: 0;
+        margin-bottom: 45px;
+    }
+
+    .footer-network {
+        margin-left: 0;
+        padding-left: 25px;
+        margin-top: 13px;
+    }
+
+    .made-by {
+        margin-left: 15px;
+        padding-top: 5px;
+    }
 }
 
 
@@ -1295,6 +1323,10 @@ button:focus {
     }
 
     .meet-team-photo, .meet-team-text {
+        width: 100%;
+    }
+
+    .most-popular-container {
         width: 100%;
     }
 }
