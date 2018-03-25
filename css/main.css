@@ -755,6 +755,132 @@ button:focus {
     display: none;
 }
 
+.language .dropdown-toggle::after {
+    vertical-align: 0.8em;
+}
+
+.language-chooser {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.qtranxs_short {
+    padding: .25rem .5rem;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+a.qtranxs_short {
+    text-decoration: none;
+}
+.language-list .qtranxs_short.active, .language-list .qtranxs_short:active, .language-list .qtranxs_short:focus, .language-list .qtranxs_short:hover {
+    background-color: #d4df35;
+    color: black;
+}
+
+.language-list .qtranxs_short:active {
+    background-color: #a4af15;
+}
+
+.languages img {
+    padding: 0px 7px;
+}
+
+.language-menu .language-chooser li {
+    display: none;
+}
+
+
+.language-menu .language-chooser li.active {
+    display: inline-block;
+    color: black;
+}
+
+.languages .active {
+    display: none;
+}
+
+.qtranxs_short {
+    display: flex;
+}
+
+.qtranxs_short span {
+    display: none;
+}
+
+.qtranxs_short:before {
+    margin: 0 7px;
+    width: 30px;
+    height: 30px;
+    content: '';
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.qtranxs_short:after {
+    line-height: 30px;
+}
+.qtranxs_short_en:after {
+    content: 'Eng';
+}
+
+.qtranxs_short_en:before {
+    background-image: url('../image/UK.png');
+}
+
+.qtranxs_short_ru:after {
+    content: 'Rus';
+}
+
+.qtranxs_short_ru:before {
+    background-image: url('../image/russia2.png');
+}
+
+.qtranxs_short_pt:after {
+    content: 'Por';
+}
+
+.qtranxs_short_pt:before {
+    background-image: url('../image/portugal1.png');
+}
+
+.qtranxs_short_fr:after {
+    content: 'Fra';
+}
+
+.qtranxs_short_fr:before {
+    background-image: url('../image/france1.png');
+}
+
+.qtranxs_short_it:after {
+    content: 'Ita';
+}
+
+.qtranxs_short_it:before {
+    background-image: url('../image/italy1.png');
+}
+
+.qtranxs_short_de:after {
+    content: 'Deu';
+}
+
+.qtranxs_short_de:before {
+    background-image: url('../image/germany1.png');
+}
+
+.qtranxs_short_es:after {
+    content: 'Spa';
+}
+
+.qtranxs_short_es:before {
+    background-image: url('../image/spain1.png');
+}
+
 @media (min-width: 1390px) {
     .mane-menu .dropdown-menu {
         top: -35px !important;
@@ -893,7 +1019,8 @@ button:focus {
     }
 
     .responsible-img {
-    display: inline;
+        display: inline;
+        width: 100%;
     }
 
     .most-popular-title::before {
@@ -1197,7 +1324,7 @@ button:focus {
 
     .our-benefits-f {
         margin-bottom: 10px;
-        font-family: 
+        font-family: Avenir Next Cyr Demi;
     }
 
     .benefits-additional-display img {
