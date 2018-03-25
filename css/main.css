@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     max-width: 1704px;
 }
 
-.container-footer {
+footer .container, .container.meet-team-content {
     max-width: 1389px;
 }
 
@@ -200,6 +200,14 @@ header {
     background-image: url('../image/line-before.png');
     width: 260px;
     height: 20px;
+}
+
+.most-popular-title::before {
+    margin-right: 10px;
+}
+
+.add-right::after {
+    margin-left: 10px;
 }
 
 .add-right {
@@ -410,7 +418,7 @@ header {
     font-family: Avenir Next Cyr Demi;
     background-color:  #d4df35;
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
-    width: 396px;
+    width: 100%;
     color:  #000000;
     font-size: 14px;
     font-weight: 500;
@@ -421,6 +429,7 @@ header {
     top: 0;
     left: 0;
     opacity: 1;
+    z-index: 1;
     padding: 27px 23px;
 }
 
@@ -443,6 +452,7 @@ header {
 
 .photo-content {
     padding-top: 10px;
+    justify-content: start;
 }
 
 .meet-team-content {
@@ -457,10 +467,15 @@ header {
     line-height: 22px;
     text-align: left;
     padding: 0;
+    padding-right: 13%;
 }
 
-.meet-team-text span {
-    font-weight: 700;
+.meet-team-photo, .meet-team-text {
+    width: 50%;
+}
+
+.add-function {
+
 }
 
 .photo-name {
@@ -476,6 +491,7 @@ header {
     font-size: 14px;
     text-align: left;
     padding: 0;
+    padding-left: 10px;
 }
 
 .photo-text .font-lang  {
@@ -815,8 +831,8 @@ button:focus {
         font-size: 20px;
     }
 
-    .meet-team-photo {
-        flex-direction: column;
+    .meet-team-text {
+        padding-right: 5%;
     }
 
     .header-social-network {
@@ -953,19 +969,30 @@ button:focus {
     .add-function img {
         width: 200px;
         height: 227px;
+        max-width: 60%;
+    }
+
+    .add-function {
         position: relative;
     }
 
     .photo-content {
         position: absolute;
-        bottom: 48px;
-        left: 232px;
-        width: 100%;
+        bottom: 0;
+        left: 50%;
         flex-direction: column;
     }
 
-    .class-zoya {
-        margin-bottom: 100px;
+    .photo-text {
+        padding-left: 0;
+    }
+
+    .add-function {
+        margin-bottom: 50px;
+    }
+
+    .meet-team-photo {
+        flex-direction: column;
     }
 
 }
@@ -1091,6 +1118,12 @@ button:focus {
         margin: 112px auto 40px;
     }
 
+    .photo-content {
+        position: absolute;
+        bottom: 0;
+        left: 60%;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1187,14 +1220,24 @@ button:focus {
 
     .add-function {
         display: inline-block;
+        width: 48%;
+
     }
 
     .add-function img {
         width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .add-function {
+        margin-bottom: 0;
     }
 
     .photo-content {
         display: inline;
+        position: initial;
     }
 
     .photo-name {
@@ -1206,7 +1249,7 @@ button:focus {
     }
 
     .footer-location, .footer-contacts, .footer-follow-us, .footer-subscribe {
-        max-width: 48%;
+        width: 48%;
         flex-wrap: wrap;
     }
 
@@ -1249,6 +1292,14 @@ button:focus {
 
     .made-by {
         padding-left: 15px;
+    }
+
+    .meet-team-photo, .meet-team-text {
+        width: 100%;
+    }
+
+    .most-popular-container {
+        width: 100%;
     }
 }
 
