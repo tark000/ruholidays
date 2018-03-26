@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="wp-content/themes/ruholidays/css/main.css">
   </head>
   <body>
-  	<header class="container header-content justify-content-between">
+    <header class="container header-content justify-content-between">
       <div class="header-left">
         <div class="logo-text"><span class="logo-color">Russian</span> Holidays</div>
         <nav dropdown class="mane-menu mane-desctop">
@@ -101,10 +101,10 @@
     </section>
 
     <section class="container most-popular">
-      <h1 class="most-popular-title"><?php _e("[:ru]Самые[:en]The most[:de]Das[:es]El más[:fr]Le plus[:it]Il più[:pt]O mais[:]"); ?>The most <span><?php _e("[:ru]популярные[:en]popular[:de]beliebteste[:es]popular[:fr]populaire[:it]popolare[:pt]popular[:]"); ?>popular</span></h1>
+      <h1 class="most-popular-title"><?php _e("[:ru]Самые[:en]The most[:de]Das[:es]El más[:fr]Le plus[:it]Il più[:pt]O mais[:]"); ?> <span><?php _e("[:ru]популярные[:en]popular[:de]beliebteste[:es]popular[:fr]populaire[:it]popolare[:pt]popular[:]"); ?></span></h1>
       <div class="most-popular-content justify-content-between">
         
-        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+        <?php while (query_posts('category_name=approach')): the_post(); ?>
           
           <div class="most-popular-container">
             <div class="most-popular-name"><?php the_title(); ?></div>
@@ -225,20 +225,19 @@
               </div>
             </div>
           </div>
-        <?php endwhile; endif; ?>
-        
-
-
-
-
-
+        <?php endwhile; ?>
+       
         
       </div>
-<?php $approach_posts = query_posts('category_name=approach');
-		$first_aprroach = $approach_posts[0];
-		$second_aprroach = $approach_posts[1];
-?>
+
+    
+
+    
       <div class="container aditional-margin">
+    <?php $approach_posts = query_posts('category_name=approach');
+      $first_aprroach = $approach_posts[0];
+      $second_aprroach = $approach_posts[1];
+    ?>
         <div>
           <div class="present-trip">
             <div class="dotter-shadow dotter-shadow-big-img add-size">
@@ -267,67 +266,72 @@
 
 
     <section id="benefits">
+    <?php $benefits_posts = query_posts('category_name=benefits');
+    $first_benefits = $benefits_posts[3];
+    $second_benefits = $benefits_posts[2];
+    $trird_benefits = $benefits_posts[1];
+    $for_benefits = $benefits_posts[0];
+    ?>
       <h1 class="container most-popular-title add-right remove-padd"><?php _e("[:ru]Наши[:en]Our[:de]Unsere[:es]Nuestros[:fr]Nos[:it]I nostri[:pt]Nossos[:]"); ?> <span><?php _e("[:ru]преимущества[:en]benefits[:de]Vorteile[:es]beneficios[:fr]avantages[:it]benefici[:pt]benefícios[:]"); ?><span></h1>
       <div class="our-benefits-background">
         <div class="container our-benefits justify-content-between">
           <div class="our-benefits-f">
             <div class="our-benefits-number">01</div>
             <div class="benefits-additional-display">
-              <div class="our-benefits-short-text">Explore the city without queues</div>
+              <div class="our-benefits-short-text"><?php echo $first_benefits->post_title; ?></div>
               <div>
                 <img src="wp-content/themes/ruholidays/image/flag.png">
               </div>
             </div>
             <div class="our-benefits-mask">
-              <h2>Explore the city without queues</h2>
+              <h2><?php echo $first_benefits->post_title; ?></h2>
               <div>
-                In St.Petersburg, almost all year around there are huge amounts of tourists.<br>There are hundreds of meters-queues to the most popular museums and this is not a joke.<br>Our tourists do not waste time before the entry of the museums.<br>For our clients, the doors of the Palaces are always open, we are always welcome in theaters and museums, and tickets are always in our hands.<br>Yes, even to the Hermitage and the Catherine Palace in Tsarskoe Selo!
+        <?php echo $first_benefits->post_content; ?>
               </div>
             </div>
           </div>
           <div class="our-benefits-f">
             <div class="our-benefits-number">02</div>
             <div class="benefits-additional-display">
-              <div class="our-benefits-short-text">Flexible pick up and drop off points</div>
+              <div class="our-benefits-short-text"><?php echo $second_benefits->post_title; ?></div>
               <div>
                 <img src="wp-content/themes/ruholidays/image/tourist.png">
               </div>
             </div>
             <div class="our-benefits-mask">
-              <h2>Flexible pick up and drop off points</h2>
+              <h2><?php echo $second_benefits->post_title; ?></h2>
               <div>
-                You yourself plan a convenient route for you - we just advise and adjust.<br>We can pick up from the hotel, and after the end of our event, deliver you to a place convenient for you.<br>
-                If you arrive and you have time before checking in at the hotel, we can meet you at the place of arrival, organize for you an interesting pastime and deliver directly to the entrance of the hotel.
+                <?php echo $second_benefits->post_content; ?>
               </div>
             </div>
           </div>
           <div class="our-benefits-f">
             <div class="our-benefits-number">03</div>
             <div class="benefits-additional-display">
-              <div class="our-benefits-short-text">Comfortable<br>cars</div>
+              <div class="our-benefits-short-text"><?php echo $trird_benefits->post_title; ?></div>
               <div>
                 <img src="wp-content/themes/ruholidays/image/taxi.png">
               </div>
             </div>
             <div class="our-benefits-mask">
-              <h2>Comfortable cars</h2>
+              <h2><?php echo $trird_benefits->post_title; ?></h2>
               <div>
-                We own an extensive fleet of cars for your various wishes.<br>Among them are a roomy Hyundai H1, the most comfortable Mercedes Viano and Mercedes Sprinter for bigger groups.<br>In our cars there is always water, snacks and safety seats for small tourists.<br>Of course, in our cars nobody smokes.
+                <?php echo $trird_benefits->post_content; ?>
               </div>
             </div>
           </div>
           <div class="our-benefits-f">
             <div class="our-benefits-number">04</div>
             <div class="benefits-additional-display">
-              <div class="our-benefits-short-text">Professional photographer</div>
+              <div class="our-benefits-short-text"><?php echo $for_benefits->post_title; ?></div>
               <div>
                 <img src="wp-content/themes/ruholidays/image/photo-camera.png">
               </div>
             </div>
             <div class="our-benefits-mask">
-              <h2>Professional<br>photographer</h2>
+              <h2><?php echo $for_benefits->post_title; ?></h2>
               <div>
-                We cooperate with a photographer who has been dealing with hisbusiness for more than 8 years.<br>Relax, be yourself, immerse yourself in the secrets of our city and you will look charming, and realy catch the right frame - the task of ourphotographer.<br>Souvenir USB-flash drive with your photos when ordering a photographer as a gift!
+                <?php echo $for_benefits->post_content; ?>
               </div>
             </div>
           </div>
@@ -345,13 +349,11 @@
       </div>
     </section>
     <section id="our-team">
-      <h1 class="container most-popular-title remove-padd"><?php _e("[:ru]Познакомьтесь[:en]Meet[:de]Treffen[:es]Conoce[:fr]Rencontrez[:it]Incontra[:pt]Conheça[:]"); ?>Meet <span><?php _e("[:ru]с командой[:en]the team[:de]Sie das Team[:es]al equipo[:fr]l'équipe[:it]la squadra[:pt]a equipe[:]"); ?>the team</span></h1>
+    <?php $team_posts = query_posts('category_name=team')[0];?>
+      <h1 class="container most-popular-title remove-padd"><?php _e("[:ru]Познакомьтесь[:en]Meet[:de]Treffen[:es]Conoce[:fr]Rencontrez[:it]Incontra[:pt]Conheça[:]"); ?> <span><?php _e("[:ru]с командой[:en]the team[:de]Sie das Team[:es]al equipo[:fr]l'équipe[:it]la squadra[:pt]a equipe[:]"); ?></span></h1>
       <div class="container meet-team-content justify-content-between">
         <div class="meet-team-text">
-          <p><b>We are a team of young, active people who are ready to decorate your holiday in the cultural capital of Russia.</b> We really love St.Petersburg and try toconvey our love to every guest whocomes to visit our city.</p>
-          <p><b>Our goal</b> is to find an individual approach to each client and make his stay in St.Petersburg the most comfortable and memorable.</p>
-          <p><b>We have assembled the best team of the best:</b> fine guides with prestigious education - native Petersburgers enjoying their work, and drivers who know the city as their five fingers and putting your safety and comfort first.</p>
-          <P><b>Entrust you rest to us and you will want to come back here again!</b></P>
+          <?php echo $team_posts->post_content; ?>
         </div>
         <div class="meet-team-photo">
           <div class="add-function">
