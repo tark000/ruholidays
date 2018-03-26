@@ -1,3 +1,4 @@
+<?php get_template_part('modal'); ?>
 <!-- Modal window START-->
     <div class="modal fade" id="exampleModalCenter-<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle-<?php the_id(); ?>" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-form-description" role="document">
