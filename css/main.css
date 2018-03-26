@@ -31,8 +31,8 @@ footer .container, .container.meet-team-content {
 
 
 header {
-    padding-top: 40px;
-    padding-bottom: 45px;
+    padding-top: 18px;
+    padding-bottom: 12px;
 }
 
 .header-content {
@@ -98,7 +98,7 @@ header {
 }
 
 .main-section {
-    background-image: url('../image/main-img.png');
+    background-image: url('../image/main-img.jpg');
     background-size: cover;
 }
 
@@ -177,7 +177,7 @@ header {
 }
 
 .main-text {
-    padding: 237px 0 254px 159px;
+    padding: 140px 0 200px 159px;
 }
 
 .most-popular-title {
