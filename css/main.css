@@ -154,8 +154,8 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 9px;
-    right: -9px;
+    top: 7px;
+    right: -7px;
 }
 
 .dotter-shadow.black-shadow::before {
@@ -165,9 +165,9 @@ header {
 .dotter-shadow.dotter-shadow-big-img::before { 
     background-image: url('../image/background-black-big.png');
     position: absolute;
-    left: -12px;
+    left: -10px;
     width: 100%;
-    bottom: -13px;
+    bottom: -10px;
     top: auto;
 }
 
@@ -228,6 +228,7 @@ header {
 .most-popular-content {
     display: flex;
     margin-bottom: 65px;
+    flex-wrap: wrap;
 }
 
 .most-popular-content img {
@@ -243,7 +244,7 @@ header {
 .most-popular-name {
     font-family: Avenir Next Cyr Bold;
     color:  #ffffff;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     text-align: left;
     position: absolute;
@@ -265,18 +266,17 @@ header {
 .btn-order-now {
     font-family: Avenir Next Cyr Bold;
     color:  #000000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
     background-color: #d4df35;
-    width: 171px;
-    padding: 15px 22px;
+    padding: 13px 22px;
     position: relative;
     z-index: 2;
 }
 
 .btn-order-now:hover, .btn-subscribe:hover, .btn-quick-order:hover {
-    box-shadow: 0px 0px 7px 5px rgba(212,223,53,0.9);
+    box-shadow: 0px 0px 2px 3px rgba(212,223,53,0.9);
 }
 
 .btn-order-now:active, .btn-subscribe:active, .btn-quick-order:active {
@@ -1200,6 +1200,11 @@ a.qtranxs_short {
     }
 }
 
+@media (min-width: 995px) {
+    .add_css_class {
+        width: 48%;
+    }
+}
 
 @media (max-width: 995px) {
     .most-popular-title {
@@ -1267,8 +1272,8 @@ a.qtranxs_short {
     }
 
     .dotter-shadow::before {
-        top: 10px;
-        right: -9px;
+        top: 7px;
+        right: -7px;
     }
 
     .add-right:after {

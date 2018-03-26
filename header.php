@@ -93,7 +93,7 @@
     <section class="main-section">
       <div class="container main-text">
         <h1><?php _e("[:ru]Индивидуальные туры по Санкт-Петербургу[:en]Individual tours around SPb[:de]Individuelle Touren rund um Sankt Petersburg[:es]Tours individuales alrededor de San Petersburgo[:fr]Visites individuelles autour de SPb[:it]Tour individuali intorno a SPB[:pt]Viagens individuais ao redor do SPb[:]"); ?></h1>
-        <h2>Saint-<br>Petersburg</h2>
+        <h2 id="faset-order">Saint-<br>Petersburg</h2>
         <span class="dotter-shadow">
           <button type="button" class="btn-quick-order border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Быстрый заказ[:en]Quick order[:de]Schnelle Bestellung[:es]Orden rápida[:fr]Commande rapide[:it]Ordine rapido[:pt]Pedido rápido[:]"); ?></button>
         </span>
@@ -110,7 +110,7 @@
         ?>
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
           
-          <div class="most-popular-container">
+          <div class="most-popular-container" style="order: <?php echo the_field('popular_order'); ?>">
             <div class="most-popular-name"><?php the_title(); ?></div>
             <img src="<?php echo the_field('image'); ?>" data-toggle="modal" data-target="#exampleModalCenter-<?php the_id(); ?>" alt="<?php the_title(); ?>">
   
@@ -162,7 +162,7 @@
                       <div class="col-12 col-sm-4">
                         <div class="modal-input-footer">
                           <span class="dotter-shadow black-shadow input-send-form">
-                            <button type="button" class="btn-order-now border-general"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                            <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
                           </span>
                         </div>
                       </div>
@@ -347,8 +347,133 @@
         <h1 class="most-popular-title remove-add-margin"><?php _e("[:ru]Наши[:en]Our[:de]Unsere[:es]Nuestros[:fr]Les visites de[:it]I tour del[:pt]Passeios[:]"); ?> <span><?php _e("[:ru]авторские туры[:en]author's tours[:de]Touren[:es]viajes[:fr]notre auteur[:it]nostro autore[:pt]do nosso autor[:]"); ?></span></h1>
       
 
-
-
+        <div class="most-popular-content author-tours justify-content-between">
+        <?php query_posts( 'category_name=tours&posts_per_page=-1' ); ?>
+ 
+        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+          <div class="most-popular-container <?php echo the_field('add_css_class'); ?>" style="order: <?php echo the_field('order'); ?>">
+            <div class="most-popular-name"><?php the_title(); ?></div>
+            <img src="<?php echo the_field('image'); ?>" data-toggle="modal" data-target="#exampleModalCenter-<?php the_id(); ?>" alt="<?php the_title(); ?>">
+  
+  <!-- Modal window START-->
+            <div class="modal fade" id="exampleModalCenter-<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle-<?php the_id(); ?>" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-form-description" role="document">
+              <div class="modal-content modal-form-content">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <img src="<?php echo the_field('image'); ?>" alt="<?php the_title(); ?>">
+                    <div class="row justify-content-between">
+                      <div class="col-12 col-sm-6 modal-form-price-pic">
+                        <?php echo the_field('price'); ?>€*<span>/<?php echo the_field('time'); ?></span>
+                      </div>
+                      <div class="col-12 col-sm-6 modal-form-text-pic">
+                        <?php echo the_field('add_info'); ?>
+                      </div>
+                    </div>
+                    <div class="modal-form-text-booking">
+                    <?php echo the_field('cost'); ?>
+                    </div>
+                    <div class="row justify-content-between">
+                      <div class="col-12 col-sm-8 modal-form-people">
+                        <div class="row justify-content-between modal-form-people-cost-border">
+                          <div class="col-12 col-sm-6 modal-form-people">
+                            <b><?php echo the_field('people3-5'); ?></b>
+                          </div>
+                          <div class="col-12 col-sm-6 modal-form-cost">
+                            <?php echo the_field('people_3-5_price'); ?>
+                          </div>
+                        </div>
+                        <div class="row justify-content-between modal-form-people-cost-border">
+                          <div class="col-12 col-sm-6 modal-form-people">
+                            <b><?php echo the_field('people_6-19'); ?></b>
+                          </div>
+                          <div class="col-12 col-sm-6 modal-form-cost">
+                            <?php echo the_field('people_6-19_price'); ?>
+                          </div>
+                        </div>
+                        <div class="row justify-content-between modal-form-people-cost-border">
+                          <div class="col-12 col-sm-6 modal-form-people">
+                            <b><?php echo the_field('people20'); ?></b>
+                          </div>
+                          <div class="col-12 col-sm-6 modal-form-cost">
+                            <?php echo the_field('people_20_price'); ?>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <div class="modal-input-footer">
+                          <span class="dotter-shadow black-shadow input-send-form">
+                            <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h5 class="modal-title modal-form-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
+                    <div class="modal-form-text-title">
+                      <?php the_content(); ?>
+                    </div>
+                    <div class="row justify-content-between modal-form-people-cost-border">
+                      <div class="col-12 col-sm-5">
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Duration:</b>
+                      </div>
+                      <div class="col-12 col-sm-7 text-align-right">
+                        <?php echo the_field('duration'); ?>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between modal-form-people-cost-border">
+                      <div class="col-12 col-sm-5">
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Limits:</b>
+                      </div>
+                      <div class="col-12 col-sm-7 text-align-right">
+                        <?php echo the_field('limits'); ?>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between modal-form-people-cost-border">
+                      <div class="col-12 col-sm-5">
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Physical activity:</b>
+                      </div>
+                      <div class="col-12 col-sm-7 text-align-right">
+                        <?php echo the_field('physical_activity'); ?>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between add-margin-top">
+                      <div class="col-12 col-sm-6">
+                        
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Included:</b><br>
+                        <?php echo the_field('included'); ?>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Not included:</b><br>
+                        <?php echo the_field('not_included'); ?>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+  <!-- Modal window END-->
+           
+            <div class="most-popular-info justify-content-between">
+              <div class="most-popular-price">
+                <?php echo the_field('price'); ?>€* <span>/<?php echo the_field('time'); ?></span>
+              </div>
+              <div>
+                <span class="dotter-shadow black-shadow">
+                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        <?php endwhile; endif; wp_reset_query(); ?>
+       
+        
+      </div>
 
       </div>
     </section>
