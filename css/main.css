@@ -29,10 +29,17 @@ footer .container, .container.meet-team-content {
     outline: 0;
 }
 
+.icon-instagram, .icon-facebook, .language .btn-secondary, .dropdown-menu, .dropdown-item, .btn-quick-order, .most-popular-container img, .most-popular-name, .btn-order-now, .our-benefits-f,  .short-img-tour, .btn-subscribe, .modal-input .close {
+    cursor: pointer;
+}
 
 header {
     padding-top: 18px;
     padding-bottom: 12px;
+}
+
+.screen-reader-response, .wpcf7-mail-sent-ok {
+    display: none;
 }
 
 .header-content {
@@ -146,6 +153,10 @@ header {
     position: relative;
 }
 
+.modal-footer .dotter-shadow br {
+    display: none;
+}
+
 .dotter-shadow::before {
     content: '';
     display: inline-block;
@@ -154,8 +165,8 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 7px;
-    right: -7px;
+    top: 9px;
+    right: -8px;
 }
 
 .dotter-shadow.black-shadow::before {
@@ -239,12 +250,13 @@ header {
 .most-popular-container {
     width: 24%;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .most-popular-name {
     font-family: Avenir Next Cyr Bold;
     color:  #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     text-align: left;
     position: absolute;
@@ -367,7 +379,7 @@ header {
 
 .our-benefits {
     display: flex;
-    padding: 174px 0;
+    padding: 174px 10px;
 }
 
 .our-benefits-f {
@@ -401,11 +413,10 @@ header {
 .our-benefits-short-text {
     font-family: Avenir Next Cyr Bold;
     color:  #000000;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     text-align: left;
-    padding: 26px 14px 30px 29px;
-    width: 68%;
+    padding: 26px 15px 30px 15px;
 }
 
 .benefits-additional-display {
@@ -414,8 +425,9 @@ header {
 
 .benefits-additional-display img {
     position: absolute;
-    right: 32px;
-    bottom: 38px;
+    right: 45px;
+    top: 10px;
+    max-width: 25%;
 }
 
 .our-benefits-mask {
@@ -1199,10 +1211,27 @@ a.qtranxs_short {
         padding: 13px 14px;
     }
 }
+.add_css_class .short-img-tuor {
+    display: block;
+}
 
+.add_css_class .long-img-tuor {
+    display: none;
+}
+
+.long-img-tuor {
+    display: none;
+}
 @media (min-width: 995px) {
     .add_css_class {
         width: 48%;
+    }
+    .add_css_class .short-img-tuor {
+        display: none;
+    }
+    
+    .add_css_class .long-img-tuor {
+            display: block;
     }
 }
 
@@ -1346,6 +1375,7 @@ a.qtranxs_short {
     .made-by {
         margin-left: 15px;
         padding-top: 5px;
+        width: 50%;
     }
 }
 
@@ -1441,17 +1471,16 @@ a.qtranxs_short {
     }
 
     .main-text {
-        padding: 200px 0 200px 24px;
+        padding: 200px 0 200px 15px;
     }
 
     .main-section h1 {
         font-size: 18px;
         display: inline-block;
-        width: auto;
     }
 
     .main-section h2 {
-        font-size: 48px;
+        font-size: 40px;
         line-height: 60px;
         margin: 19px -4px 45px;
     }
@@ -1506,28 +1535,22 @@ a.qtranxs_short {
 
     .benefits-additional-display img {
         width: 30%;
-        right: 28px;
-        top: 20px;
+        right: 10px;
+        top: 16px;
     }
 
     .our-benefits-number {
-        padding-top: 30px;
+        padding-top: 16px;
     }
 
     .our-benefits-short-text {
         font-size: 14px;
-        padding: 26px 15px 30px 21px;
+        padding: 18px 0 30px 15px;
     }
 
     .our-benefits-f {
         margin-bottom: 10px;
         font-family: Avenir Next Cyr Demi;
-    }
-
-    .benefits-additional-display img {
-        width: 30%;
-        right: 10px;
-        top: 30px;
     }
 
     .remove-padd {
@@ -1639,7 +1662,7 @@ a.qtranxs_short {
     }
 
     .footer-subscribe input, .btn-subscribe {
-        width: 200px;
+        width: 100%;
     }
 
     .made-by {
@@ -1652,8 +1675,76 @@ a.qtranxs_short {
 
     .most-popular-container {
         width: 100%;
+        margin: 0 20px;
+        margin-bottom: 10px;
+    }
+    
+    .most-popular {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .btn-quick-order {
+        padding: 10px 29px;
+    }
+    
+    .dotter-shadow::before {
+        top: 14px;
+        right: -17px;
+    }
+    
+    .main-section {
+        background-position: -221px -24px;
+    }
+    
+    .main-text {
+        padding: 200px 0 118px 15px;
+    }
+    
+    .our-benefits-number::before {
+        width: 39px;
+        margin-right: 10px;
+    }
+    
+    .our-benefits-f:nth-child(2n) .our-benefits-mask {
+        right: 0;
+        left: auto;
+    }
+    
+    .our-benefits-mask {
+        width: 188%;
+        padding: 20px 15px;
+    }
+    
+    .our-benefits-f:nth-child(3) .our-benefits-mask, .our-benefits-f:nth-child(4) .our-benefits-mask  {
+        top: auto;
+        bottom: 0;
+    }
+    
+    
+}
+
+/*@media (max-width: 410px) { 
+    .our-benefits-short-text {
+        padding: 8px 15px 15px 15px;
+    }
+    
+    .benefits-additional-display img {
+        right: 8px;
+        top: 34px;
+    }
+    
+    .our-benefits-number {
+        padding-top: 11px;
     }
 }
+
+@media (max-width: 380px) {
+    .benefits-additional-display img {
+        top: 48px;
+    }
+}*/
+
 
 
 

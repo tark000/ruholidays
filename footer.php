@@ -3,11 +3,11 @@
       <div class="container footer-general justify-content-between ">
         <div class="footer-location justify-content-between">
           <div class="footer-main-name location-mark"><?php _e("[:ru]Наше расположение[:en]Location[:de]Standort[:es]Localizacion[:fr]Localisation[:it]posizione[:pt]Localização[:]"); ?> </div>
-          <div class="footer-main-description location-changes">Saint Petersburg,<br> Zaporozhskaya street, 12</div>
+          <div class="footer-main-description location-changes">Saint Petersburg,<br> 6v, Grivtsova Lane </div>
         </div>
         <div class="footer-contacts justify-content-between">
-          <div class="footer-main-name contacts-mark"><?php _e("[:ru]Контакты[:en]Contacts[:de]Kontakte[:es]Contactos[:fr]Contacts[:it]Contatti[:pt]Contatos[:]"); ?>Contacts</div>
-          <div class="footer-main-description contacts-changes">+7 (123) 123-4567<br>+7 (123) 123-4567</div>
+          <div class="footer-main-name contacts-mark"><?php _e("[:ru]Контакты[:en]Contacts[:de]Kontakte[:es]Contactos[:fr]Contacts[:it]Contatti[:pt]Contatos[:]"); ?> </div>
+          <div class="footer-main-description contacts-changes">+7 (952) 396-5703</div>
         </div>
         <div class="footer-follow-us">
           <div class="footer-main-name follow-us-changes"><?php _e("[:ru]Подписывайтесь на нас в соцсетях[:en]Follow us[:de]Folge uns[:es]Síguenos[:fr]Suivez nous[:it]Seguici[:pt]Siga-nos[:]"); ?></div>
@@ -43,27 +43,8 @@
               <h4 class="modal-title modal-window-title" id="exampleModalLabel"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Let's order <span>right now</span></h4>
               <h5 class="form-request"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Leave a request and we will contact you</h5>
             </div>
-            <div class="modal-body input-body-margin">
-              <form>
-                <div>
-                  <input type="text" placeholder="Name" class="modal-input modal-input-name">
-                </div>
-                <div>
-                  <input type="email" placeholder="Email address" class="modal-input modal-input-email">
-                </div>
-                <div>
-                  <input type="tel" placeholder="Phone" class="modal-input modal-input-tel">
-                </div>
-                <div>
-                  <input type="text" placeholder="Messge" class="modal-input modal-input-msg">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer modal-input-footer">
-              <span class="dotter-shadow black-shadow input-send-form">
-                <button type="button" class="btn-order-now border-general">Send</button>
-              </span>
-            </div>
+        
+       <?php echo do_shortcode('[contact-form-7 id="287" title="Контактная форма 1"]'); ?>
           </div>
         </div>
       </div>

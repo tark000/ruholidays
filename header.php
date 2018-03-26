@@ -25,7 +25,7 @@
         <div class="mane-menu mane-mobile" data-toggle="collapse" href="#dropdownMenuMobile" role="button" aria-expanded="false" aria-controls="dropdownMenuMobile"></div>
       </div>
       <div class="header-contact" class="collapse" id="dropdownMenuMobile">
-        <div class="header-tel">+7 (123) 456-7890</div>
+        <div class="header-tel">+7 (952) 396-5703</div>
         <div class="dropdown show language">
           <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="languages language-menu">
@@ -353,8 +353,11 @@
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
           <div class="most-popular-container <?php echo the_field('add_css_class'); ?>" style="order: <?php echo the_field('order'); ?>">
             <div class="most-popular-name"><?php the_title(); ?></div>
-            <img src="<?php echo the_field('image'); ?>" data-toggle="modal" data-target="#exampleModalCenter-<?php the_id(); ?>" alt="<?php the_title(); ?>">
-  
+            <img src="<?php echo the_field('image'); ?>" class="short-img-tuor" data-toggle="modal" data-target="#exampleModalCenter-<?php the_id(); ?>" alt="<?php the_title(); ?>">
+        
+        
+        <img src="<?php echo the_field('image_lon'); ?>" class="long-img-tuor" data-toggle="modal" data-target="#exampleModalCenter-<?php the_id(); ?>" alt="<?php the_title(); ?>">
+        
   <!-- Modal window START-->
             <div class="modal fade" id="exampleModalCenter-<?php the_id(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle-<?php the_id(); ?>" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-form-description" role="document">
