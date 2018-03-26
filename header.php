@@ -103,8 +103,12 @@
     <section class="container most-popular">
       <h1 class="most-popular-title"><?php _e("[:ru]Самые[:en]The most[:de]Das[:es]El más[:fr]Le plus[:it]Il più[:pt]O mais[:]"); ?> <span><?php _e("[:ru]популярные[:en]popular[:de]beliebteste[:es]popular[:fr]populaire[:it]popolare[:pt]popular[:]"); ?></span></h1>
       <div class="most-popular-content justify-content-between">
-        
-        <?php while (query_posts('category_name=approach')): the_post(); ?>
+        <?php
+ 
+        query_posts( 'category_name=popular' );
+
+        ?>
+        <?php if (have_posts()): while (have_posts()): the_post(); ?>
           
           <div class="most-popular-container">
             <div class="most-popular-name"><?php the_title(); ?></div>
@@ -225,7 +229,7 @@
               </div>
             </div>
           </div>
-        <?php endwhile; ?>
+        <?php endwhile; endif; wp_reset_query(); ?>
        
         
       </div>
