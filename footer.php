@@ -50,7 +50,8 @@
       </div>
     </div>
 <!--finish modal window  -->
-    <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery.min.js"></script>
+    <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/popper.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/script.js"></script>

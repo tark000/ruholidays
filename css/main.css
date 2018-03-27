@@ -600,6 +600,15 @@ footer {
     top: 2px;
 }
 
+.footer-subscribe, .footer-location, .footer-follow-us  {
+    width: 24%;
+}
+
+.footer-contacts {
+    width: 19%;
+}
+
+
 .footer-subscribe-join {
     font-family: Avenir Next Cyr Bold;
     color:  #000000;
@@ -615,7 +624,7 @@ footer {
     background: transparent;
     outline: none;
     border-bottom: 1px solid #000000;
-    width: 254px;
+    width: 100%;
     margin-bottom: 20px;
     background-image: url('../image/send-mail-mark.png');
     background-repeat: no-repeat;
@@ -635,7 +644,7 @@ footer {
 
 .btn-subscribe {
     background-color: #d4df35;
-    width: 254px;
+    width: 100%;
     height: 36px;
     font-family: Avenir Next Cyr Regular;
     color:  #000000;
@@ -1174,6 +1183,11 @@ a.qtranxs_short {
     display: none;
 }
 
+.most-popular-container img {
+    width: 100%;
+    max-width: 100%;
+}
+
 @media (max-width: 1800px) {
     .our-benefits-background {
         background-position: 0 -250px;
@@ -1542,6 +1556,25 @@ a.qtranxs_short {
         bottom: 0;
         left: 60%;
         flex-direction: column;
+    }
+    
+    .individual-trip .individual-trip-title, .present-trip .present-trip-title {
+        line-height: 26px;
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 13px;
+    }
+    
+    .individual-trip p, .present-trip p {
+        font-size: 14px;
+    }
+    
+    .individual-rip-text {
+        padding-top: 5px;
+    }
+    
+    .margin-before-our-team {
+        margin-top: 146px;
     }
 }
 
