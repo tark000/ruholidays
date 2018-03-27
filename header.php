@@ -27,7 +27,10 @@
         <div class="mane-menu mane-mobile" data-toggle="collapse" href="#dropdownMenuMobile" role="button" aria-expanded="false" aria-controls="dropdownMenuMobile"></div>
       </div>
       <div class="header-contact" class="collapse" id="dropdownMenuMobile">
-        <div class="header-tel">+7 (952) 396-5703</div>
+        <div class="header-tel">
+          <?php $phone_posts = query_posts('category_name=phone')[0];?>
+          <?php echo $phone_posts->post_title; ?>
+        </div>
         <div class="dropdown show language">
           <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="languages language-menu">
@@ -76,6 +79,7 @@
           </div>
         </div>
         <div class="header-social-network">
+
           <a href="https://www.instagram.com/russianholiday/">
             <img src="wp-content/themes/ruholidays/image/instagram.png" class="icon-instagram">
           </a>
@@ -93,6 +97,21 @@
     </header>
 
     <section class="main-section">
+
+      <!-- HEADR SLIDER -->
+          <div id="headerSlider" class="carousel slide" data-ride="header-slider carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item slide-1 active">
+              </div>
+              <div class="carousel-item slide-2">
+              </div>
+              <div class="carousel-item slide-3">
+              </div>
+              <div class="carousel-item slide-4">
+              </div>
+            </div>
+          </div>
+          <!-- END HEADER SLIDER -->
       <div class="container main-text">
         <h1><?php _e("[:ru]Индивидуальные туры по Санкт-Петербургу[:en]Individual tours around SPb[:de]Individuelle Touren rund um Sankt Petersburg[:es]Tours individuales alrededor de San Petersburgo[:fr]Visites individuelles autour de SPb[:it]Tour individuali intorno a SPB[:pt]Viagens individuais ao redor do SPb[:]"); ?></h1>
         <h2 id="faset-order"><?php _e("[:ru]Санкт-[:en]Saint-[:de]Sankt[:es]San[:fr]Saint-[:it]San[:pt]São[:]"); ?><br><?php _e("[:ru]Петербург[:en]Petersburg[:de]Petersburg[:es]Petersburgo[:fr]Pétersbourg[:it]Petersburgo[:pt]Petersburgo[:]"); ?></h2>

@@ -3,7 +3,7 @@
   
 <!-- Slider start -->
   
-  <div id="carouselExampleIndicators" data-interval="500000" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" data-interval="500000" class="popular-carousel carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <?php 
           query_posts( 'category_name=popular' );

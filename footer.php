@@ -3,11 +3,17 @@
       <div class="container footer-general justify-content-between ">
         <div class="footer-location justify-content-between">
           <div class="footer-main-name location-mark"><?php _e("[:ru]Наше расположение[:en]Location[:de]Standort[:es]Localizacion[:fr]Localisation[:it]posizione[:pt]Localização[:]"); ?> </div>
-          <div class="footer-main-description location-changes">Saint Petersburg,<br> 6v, Grivtsova Lane </div>
+          <div class="footer-main-description location-changes">
+            <?php $location_posts = query_posts('category_name=location')[0];?>
+            <?php echo $location_posts->post_content; ?>
+          </div>
         </div>
         <div class="footer-contacts justify-content-between">
           <div class="footer-main-name contacts-mark"><?php _e("[:ru]Контакты[:en]Contacts[:de]Kontakte[:es]Contactos[:fr]Contacts[:it]Contatti[:pt]Contatos[:]"); ?></div>
-          <div class="footer-main-description contacts-changes">+7 (952) 396-5703</div>
+          <div class="footer-main-description contacts-changes">
+            <?php $phone_posts = query_posts('category_name=phone')[0];?>
+            <?php echo $phone_posts->post_title; ?>
+          </div>
         </div>
         <div class="footer-follow-us">
           <div class="footer-main-name follow-us-changes"><?php _e("[:ru]Подписывайтесь на нас в соцсетях[:en]Follow us[:de]Folge uns[:es]Síguenos[:fr]Suivez nous[:it]Seguici[:pt]Siga-nos[:]"); ?></div>
@@ -50,8 +56,12 @@
       </div>
     </div>
 <!--finish modal window  -->
+
+
+
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery.min.js"></script>
-    <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <script type="text/javascript" src="wp-content/themes/ruholidays/js/jquery.mobile-1.4.5.min.js"></script> -->
+    <script type="text/javascript" src="wp-content/themes/ruholidays/js/hammer.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/popper.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/ruholidays/js/script.js"></script>
