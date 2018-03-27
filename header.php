@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ruholidays</title>
+    <title>RuHolidays</title>
   <meta name="description" content="Spend time in russia">
     <meta name="keywords" content="Ruholidays">
     <link rel="stylesheet" href="wp-content/themes/ruholidays/css/bootstrap.min.css">
