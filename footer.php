@@ -6,7 +6,7 @@
           <div class="footer-main-description location-changes">Saint Petersburg,<br> 6v, Grivtsova Lane </div>
         </div>
         <div class="footer-contacts justify-content-between">
-          <div class="footer-main-name contacts-mark"><?php _e("[:ru]Контакты[:en]Contacts[:de]Kontakte[:es]Contactos[:fr]Contacts[:it]Contatti[:pt]Contatos[:]"); ?> </div>
+          <div class="footer-main-name contacts-mark"><?php _e("[:ru]Контакты[:en]Contacts[:de]Kontakte[:es]Contactos[:fr]Contacts[:it]Contatti[:pt]Contatos[:]"); ?></div>
           <div class="footer-main-description contacts-changes">+7 (952) 396-5703</div>
         </div>
         <div class="footer-follow-us">
@@ -40,8 +40,8 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <h4 class="modal-title modal-window-title" id="exampleModalLabel"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Let's order <span>right now</span></h4>
-              <h5 class="form-request"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Leave a request and we will contact you</h5>
+              <h4 class="modal-title modal-window-title" id="exampleModalLabel"><?php _e("[:ru]Закажите[:en]Let's order[:de]Bestellen[:es]Ordena[:fr]Commandez[:it]Ordiniamo[:pt]Vamos[:]"); ?><span><?php _e("[:ru]прямо сейчас[:en] right now[:de]Sie jetzt[:es]ahora[:fr]maintenant[:it]adesso[:pt]encomendar agora[:]"); ?></span></h4>
+              <h5 class="form-request"><?php _e("[:ru]Оставьте заявку, и мы свяжемся с Вами[:en]Leave a request and we will contact you[:de]Schicken Sie eine Anfrage und wir setzen uns mit Ihnen in Verbindung[:es]Deje una solicitud y nos pondremos en contacto con usted[:fr]Laissez une demande et nous vous contacterons[:it]Lascia una richiesta e ti contatteremo[:pt]Deixe um pedido e entraremos em contato[:]"); ?></h5>
             </div>
         
        <?php echo do_shortcode('[contact-form-7 id="287" title="Контактная форма 1"]'); ?>

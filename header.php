@@ -4,7 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RuHolidays</title>
+    <title>Ruholidays</title>
+  <meta name="description" content="Spend time in russia">
+    <meta name="keywords" content="Ruholidays">
     <link rel="stylesheet" href="wp-content/themes/ruholidays/css/bootstrap.min.css">
     <link rel="stylesheet" href="wp-content/themes/ruholidays/css/fonts.css">
     <link rel="stylesheet" href="wp-content/themes/ruholidays/css/main.css">
@@ -12,7 +14,7 @@
   <body>
     <header class="container header-content justify-content-between">
       <div class="header-left">
-        <div class="logo-text"><span class="logo-color">Russian</span> Holidays</div>
+        <div class="logo-text"><img src="wp-content/themes/ruholidays/image/logo.png" alt="Ru holidays"></div>
         <nav dropdown class="mane-menu mane-desctop">
           <div class="menu-togle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu">
@@ -93,7 +95,7 @@
     <section class="main-section">
       <div class="container main-text">
         <h1><?php _e("[:ru]Индивидуальные туры по Санкт-Петербургу[:en]Individual tours around SPb[:de]Individuelle Touren rund um Sankt Petersburg[:es]Tours individuales alrededor de San Petersburgo[:fr]Visites individuelles autour de SPb[:it]Tour individuali intorno a SPB[:pt]Viagens individuais ao redor do SPb[:]"); ?></h1>
-        <h2 id="faset-order">Saint-<br>Petersburg</h2>
+        <h2 id="faset-order"><?php _e("[:ru]Санкт-[:en]Saint-[:de]Sankt[:es]San[:fr]Saint-[:it]San[:pt]São[:]"); ?><br><?php _e("[:ru]Петербург[:en]Petersburg[:de]Petersburg[:es]Petersburgo[:fr]Pétersbourg[:it]Petersburgo[:pt]Petersburgo[:]"); ?></h2>
         <span class="dotter-shadow">
           <button type="button" class="btn-quick-order border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Быстрый заказ[:en]Quick order[:de]Schnelle Bestellung[:es]Orden rápida[:fr]Commande rapide[:it]Ordine rapido[:pt]Pedido rápido[:]"); ?></button>
         </span>
@@ -162,7 +164,7 @@
                       <div class="col-12 col-sm-4">
                         <div class="modal-input-footer">
                           <span class="dotter-shadow black-shadow input-send-form">
-                            <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                            <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Заказать сейчас[:en]Order now[:de]Jetzt Bestellen[:es]Ordene ahora[:fr]Commandez maintenant[:it]Ordina ora[:pt]Encomendar agora[:]"); ?></button>
                           </span>
                         </div>
                       </div>
@@ -178,7 +180,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Duration:</b>
+                        <b><?php _e("[:ru]Продолжительность[:en]Duration[:de]Dauer[:es]Duración[:fr]Durée[:it]Durata[:pt]Duração[:]"); ?>:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('duration'); ?>
@@ -186,7 +188,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Limits:</b>
+                        <b><?php _e("[:ru]Ограничения[:en]Limits[:de]Besonderheiten[:es]Límites[:fr]Limites[:it]limiti[:pt]Limites[:]"); ?>:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('limits'); ?>
@@ -194,7 +196,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Physical activity:</b>
+                        <b><?php _e("[:ru]Физическая активность[:en]Physical activity[:de]Körperliche Aktivität[:es]Actividad física[:fr]Activité physique[:it]Attività fisica[:pt]Atividade física[:]"); ?>:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('physical_activity'); ?>
@@ -203,11 +205,11 @@
                     <div class="row justify-content-between add-margin-top">
                       <div class="col-12 col-sm-6">
                         
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Included:</b><br>
+                        <b><?php _e("[:ru]Включено[:en]Included[:de]Inbegriffen[:es]Incluido[:fr]Inclus[:it]incluso[:pt]Incluído[:]"); ?>:</b><br>
                         <?php echo the_field('included'); ?>
                       </div>
                       <div class="col-12 col-sm-6">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Not included:</b><br>
+                        <b><?php _e("[:ru]Не включено[:en]Not included[:de]Nicht inbegriffen[:es]No incluido[:fr]Pas inclus[:it]Non incluso[:pt]Não incluído[:]"); ?>:</b><br>
                         <?php echo the_field('not_included'); ?>
                       </div>
                     </div>
@@ -224,7 +226,7 @@
               </div>
               <div>
                 <span class="dotter-shadow black-shadow">
-                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Заказать сейчас[:en]Order now[:de]Jetzt Bestellen[:es]Ordene ahora[:fr]Commandez maintenant[:it]Ordina ora[:pt]Encomendar agora[:]"); ?></button>
                 </span>
               </div>
             </div>
@@ -406,7 +408,7 @@
                       <div class="col-12 col-sm-4">
                         <div class="modal-input-footer">
                           <span class="dotter-shadow black-shadow input-send-form">
-                            <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                            <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Заказать сейчас[:en]Order now[:de]Jetzt Bestellen[:es]Ordene ahora[:fr]Commandez maintenant[:it]Ordina ora[:pt]Encomendar agora[:]"); ?></button>
                           </span>
                         </div>
                       </div>
@@ -422,7 +424,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Duration:</b>
+                        <b><?php _e("[:ru]Продолжительность[:en]Duration[:de]Dauer[:es]Duración[:fr]Durée[:it]Durata[:pt]Duração[:]"); ?>:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('duration'); ?>
@@ -430,7 +432,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Limits:</b>
+                        <b><?php _e("[:ru]Ограничения[:en]Limits[:de]Besonderheiten[:es]Límites[:fr]Limites[:it]limiti[:pt]Limites[:]"); ?>:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('limits'); ?>
@@ -438,7 +440,7 @@
                     </div>
                     <div class="row justify-content-between modal-form-people-cost-border">
                       <div class="col-12 col-sm-5">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Physical activity:</b>
+                        <b><?php _e("[:ru]Физическая активность[:en]Physical activity[:de]Körperliche Aktivität[:es]Actividad física[:fr]Activité physique[:it]Attività fisica[:pt]Atividade física[:]"); ?>:</b>
                       </div>
                       <div class="col-12 col-sm-7 text-align-right">
                         <?php echo the_field('physical_activity'); ?>
@@ -447,11 +449,11 @@
                     <div class="row justify-content-between add-margin-top">
                       <div class="col-12 col-sm-6">
                         
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Included:</b><br>
+                        <b><?php _e("[:ru]Включено[:en]Included[:de]Inbegriffen[:es]Incluido[:fr]Inclus[:it]incluso[:pt]Incluído[:]"); ?>:</b><br>
                         <?php echo the_field('included'); ?>
                       </div>
                       <div class="col-12 col-sm-6">
-                        <b><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Not included:</b><br>
+                        <b><?php _e("[:ru]Не включено[:en]Not included[:de]Nicht inbegriffen[:es]No incluido[:fr]Pas inclus[:it]Non incluso[:pt]Não incluído[:]"); ?>:</b><br>
                         <?php echo the_field('not_included'); ?>
                       </div>
                     </div>
@@ -468,7 +470,7 @@
               </div>
               <div>
                 <span class="dotter-shadow black-shadow">
-                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?>Order now</button>
+                  <button type="button" class="btn-order-now border-general" data-toggle="modal" data-target="#exampleModal"><?php _e("[:ru]Заказать сейчас[:en]Order now[:de]Jetzt Bestellen[:es]Ordene ahora[:fr]Commandez maintenant[:it]Ordina ora[:pt]Encomendar agora[:]"); ?></button>
                 </span>
               </div>
             </div>
@@ -491,22 +493,22 @@
           <div class="add-function">
             <img src="wp-content/themes/ruholidays/image/photo-zoya.png" alt="photo-Zoya" class="class-zoya">
             <div class="photo-content">
-              <div class="photo-name">Zoya</div>
+              <div class="photo-name"><?php _e("[:ru]Зоя[:en]Zoya[:de][:es]Zoya[:fr]Zoya[:it]Zoe[:pt]Zoya[:]"); ?></div>
               <div class="photo-text">
-                <div class="photo-year"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> 5 years in tourism</div>
-                <div class="font-lang"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Languages:</div>
-                <div class=""><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Russian, English, German, Spanish</div>
+                <div class="photo-year"><?php _e("[:ru]5 лет в туризме[:en]5 years in tourism[:de][:es]5 años en el turismo[:fr]5 ans dans le tourisme[:it]5 anni nel settore del turismo[:pt]5 anos no turismo[:]"); ?></div>
+                <div class="font-lang"><?php _e("[:ru]Языки[:en]Languages[:de][:es]Idiomas[:fr]Langues[:it]Lingue[:pt]Idiomas[:]"); ?>:</div>
+                <div class=""><?php _e("[:ru]Русский, английский, немецкий, испанский[:en]Russian, English, German, Spanish[:de][:es]Ruso, inglés, alemán, español[:fr]Russe, anglais, allemand, espagnol [:it]Russo, inglese, tedesco, spagnolo[:pt]Russo, Inglês, Alemão, Espanhol[:]"); ?></div>
               </div>
             </div>
           </div>
           <div class="add-function">
             <img src="wp-content/themes/ruholidays/image/photo-maksim.png">
             <div class="photo-content">
-              <div class="photo-name">Maksim</div>
+              <div class="photo-name"><?php _e("[:ru]Максим[:en]Maksim[:de][:es]Maxim[:fr]Maxim[:it]Massimo[:pt]Maxim[:]"); ?></div>
               <div class="photo-text">
-                <div class="photo-year"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> 10 years in tourism</div>
-                <div class="font-lang"><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Languages:</div>
-                <div class=""><?php _e("[:ru][:en][:de][:es][:fr][:it][:pt][:]"); ?> Russian, English</div>
+                <div class="photo-year"><?php _e("[:ru]10 лет в туризме[:en]10 years in tourism[:de][:es]10 años en el turismo[:fr]10 ans dans le tourisme[:it]10 anni nel settore del turismo[:pt]10 anos no turismo[:]"); ?></div>
+                <div class="font-lang"><?php _e("[:ru]Языки[:en]Languages[:de][:es]Idiomas[:fr]Langues[:it]Lingue[:pt]Idiomas[:]"); ?>:</div>
+                <div class=""><?php _e("[:ru]Русский, английский[:en]Russian, English[:de][:es]Ruso, Inglés[:fr]Russe, Anglais[:it]Russo, Inglese[:pt]Russo, inglês[:]"); ?> </div>
               </div>
             </div>
           </div>
